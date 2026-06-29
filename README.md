@@ -13,7 +13,27 @@ generate **images** and **videos** with a single awaited call.
 - ⏱️ Configurable timeouts, poll interval, and max wait
 - 🧱 Typed results and a clear error hierarchy
 - 🪝 Optional webhook support
-- 📦 Zero runtime dependencies (uses native `fetch`, Node 18+)
+- 🔌 **MCP server** so Claude (Desktop / Code) can call Higgsfield directly
+- 📦 Native `fetch` (Node 18+); only MCP deps are added for the server
+
+## Connect to Claude (MCP)
+
+This package ships an MCP server (`higgsfield-mcp`) that exposes Higgsfield as
+tools Claude can call: `higgsfield_generate_image`, `higgsfield_generate_video`,
+and `higgsfield_get_status`.
+
+- **Claude Desktop:** see [`SETUP_CLAUDE_DESKTOP.md`](./SETUP_CLAUDE_DESKTOP.md)
+  for a full step-by-step guide (account, API key, config file).
+- **Claude Code (CLI):**
+
+  ```bash
+  npm install && npm run build
+  claude mcp add higgsfield --env HF_CREDENTIALS="KEY_ID:KEY_SECRET" \
+    -- node /absolute/path/to/dist/mcp-server.js
+  ```
+
+> The Higgsfield SDK is free, but generation consumes **credits** — you need a
+> funded Higgsfield account and an API key from <https://cloud.higgsfield.ai>.
 
 ## Install
 
