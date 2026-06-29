@@ -1,0 +1,39 @@
+{
+  "name": "@ilo/higgsfield-connector",
+  "version": "0.1.0",
+  "description": "Connector for the Higgsfield AI generation API (image & video) for ILO.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "example": "node --import tsx src/example.ts"
+  },
+  "keywords": [
+    "higgsfield",
+    "connector",
+    "ai",
+    "image-generation",
+    "video-generation",
+    "ilo"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}
