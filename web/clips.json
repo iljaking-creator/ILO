@@ -1,0 +1,40 @@
+{
+  "generatedAt": null,
+  "clips": [
+    {
+      "id": "iron-paw",
+      "title": "Iron Paw",
+      "caption": "A panda warrior holds a still stance in a misty bamboo grove.",
+      "social": "Meet Iron Paw 🐼🥋 Stillness before the storm. #animation #kungfu #aiart #shorts",
+      "status": "pending"
+    },
+    {
+      "id": "neon-kaiju",
+      "title": "Neon Kaiju",
+      "caption": "A colossal monster rises from a neon-lit harbor at night.",
+      "social": "Something woke up in the harbor tonight 🌃🦖 #kaiju #animation #aivideo #scifi",
+      "status": "pending"
+    },
+    {
+      "id": "sky-fox",
+      "title": "Sky Fox",
+      "caption": "An anime fox spirit leaps across moonlit rooftops.",
+      "social": "Chasing moonlight 🦊🌙 #anime #foxspirit #aianimation #reels",
+      "status": "pending"
+    },
+    {
+      "id": "mecha-dawn",
+      "title": "Mecha Dawn",
+      "caption": "A towering mecha powers up at desert sunrise.",
+      "social": "Systems online ⚙️🌅 #mecha #animation #aivideo #scifiart",
+      "status": "pending"
+    },
+    {
+      "id": "crystal-dragon",
+      "title": "Crystal Dragon",
+      "caption": "A luminous dragon coils around a glowing crystal in an ice cavern.",
+      "social": "Guardian of the frost crystal ❄️🐉 #dragon #fantasy #aianimation #shorts",
+      "status": "pending"
+    }
+  ]
+}

@@ -21,7 +21,9 @@
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "example": "node --import tsx src/example.ts",
-    "mcp": "node --import tsx src/mcp-server.ts"
+    "mcp": "node --import tsx src/mcp-server.ts",
+    "generate": "node --import tsx src/generate-clips.ts",
+    "serve": "node --import tsx scripts/serve.ts"
   },
   "keywords": [
     "higgsfield",

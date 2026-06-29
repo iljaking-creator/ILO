@@ -42,6 +42,30 @@ npm install
 npm run build
 ```
 
+## Generate 5 social clips + website
+
+This repo also ships a ready-to-run pipeline that produces 5 original animated
+clips (storyboards in [`src/clips.ts`](./src/clips.ts)) and a website to publish
+them ([`web/`](./web)).
+
+```bash
+npm install && npm run build
+
+# 1) Generate the clips (needs a funded Higgsfield key)
+HF_CREDENTIALS="KEY_ID:KEY_SECRET" npm run generate
+# → writes web/clips.json with image + video URLs
+
+# 2) Preview the gallery
+npm run serve   # http://localhost:5173
+```
+
+Before generation the gallery shows the storyboards as "pending"; after
+generation each card embeds its video, ready to download and post.
+
+See [`RESEARCH_OPEN_SOURCE_VIDEO.md`](./RESEARCH_OPEN_SOURCE_VIDEO.md) for a
+vetted comparison of safe open-source video models (and an honest note on what
+quality is realistically achievable).
+
 ## Configuration
 
 Create credentials at <https://cloud.higgsfield.ai> and provide them as
