@@ -1,0 +1,16 @@
+# Open-source clip generation with Wan 2.2 (Apache-2.0).
+# Install on a machine with a CUDA GPU.
+#
+# Install PyTorch matching your CUDA version first, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+# then:
+#   pip install -r requirements.txt
+
+torch>=2.4
+diffusers>=0.35
+transformers>=4.49
+accelerate>=1.0
+ftfy
+imageio
+imageio-ffmpeg
+sentencepiece

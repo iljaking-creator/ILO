@@ -66,6 +66,23 @@ See [`RESEARCH_OPEN_SOURCE_VIDEO.md`](./RESEARCH_OPEN_SOURCE_VIDEO.md) for a
 vetted comparison of safe open-source video models (and an honest note on what
 quality is realistically achievable).
 
+### Free / self-hosted alternative (no Higgsfield credits)
+
+The same 5 clips can be generated with **Wan 2.2** (Alibaba, Apache-2.0) — a
+top-rated open-source video model — instead of Higgsfield. It needs a CUDA GPU
+(your own or a rented cloud GPU for a few cents). See
+[`local/README.md`](./local/README.md).
+
+```bash
+cd local
+pip install -r requirements.txt
+python generate_local.py --dry-run   # validate (no GPU needed)
+python generate_local.py             # generate on a GPU → web/clips/*.mp4
+```
+
+Both pipelines read the same storyboard ([`storyboard.json`](./storyboard.json))
+and write the same `web/clips.json`, so the website works with either backend.
+
 ## Configuration
 
 Create credentials at <https://cloud.higgsfield.ai> and provide them as

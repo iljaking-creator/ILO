@@ -2,6 +2,14 @@ node_modules/
 dist/
 *.log
 
+# Python
+__pycache__/
+local/.venv/
+*.pyc
+
+# Generated clip media (large binaries — keep them out of git)
+web/clips/*.mp4
+
 # Local secrets — never commit real credentials
 .env
 .env.local

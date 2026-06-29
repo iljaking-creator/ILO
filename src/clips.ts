@@ -1,21 +1,21 @@
 /**
- * Storyboard for the first 5 social-media clips.
+ * Loads the 5-clip storyboard from the canonical `storyboard.json` so that the
+ * TypeScript (Higgsfield) and Python (Wan 2.2) pipelines share one source.
  *
- * Each clip is generated in two stages:
+ * Each clip is generated in two stages by the Higgsfield pipeline:
  *   1. text-to-image  → a high-quality keyframe
  *   2. image-to-video → animate that keyframe into a short clip
  *
- * The concepts are ORIGINAL (no trademarked characters), so the output is
- * safe to publish on social media. They deliberately echo popular animation
- * genres (kung-fu animal hero, kaiju, mecha, anime spirit, fantasy dragon).
+ * The open-source pipeline (local/generate_local.py) reads the same file.
  */
+import { readFileSync } from "node:fs";
 
 export interface ClipSpec {
   id: string;
   title: string;
   /** One-line pitch shown on the website. */
   caption: string;
-  /** Prompt for the text-to-image keyframe. */
+  /** Prompt for the text-to-image keyframe / text-to-video. */
   imagePrompt: string;
   /** Prompt describing the camera move / animation for image-to-video. */
   motionPrompt: string;
@@ -25,85 +25,8 @@ export interface ClipSpec {
   social: string;
 }
 
-export const CLIPS: ClipSpec[] = [
-  {
-    id: "iron-paw",
-    title: "Iron Paw",
-    caption: "A panda warrior holds a still stance in a misty bamboo grove.",
-    imagePrompt:
-      "cinematic 3D animated movie still, a heroic giant panda martial-arts master " +
-      "in a focused fighting stance, wearing a worn red sash, misty bamboo forest at " +
-      "golden hour, volumetric light rays, highly detailed fur, Pixar/DreamWorks style, " +
-      "shallow depth of field, epic, 8k",
-    motionPrompt:
-      "slow cinematic push-in, gentle drifting mist and falling bamboo leaves, " +
-      "subtle breathing motion, dramatic light flicker",
-    aspectRatio: "9:16",
-    social:
-      "Meet Iron Paw 🐼🥋 Stillness before the storm. #animation #kungfu #aiart #shorts",
-  },
-  {
-    id: "neon-kaiju",
-    title: "Neon Kaiju",
-    caption: "A colossal monster rises from a neon-lit harbor at night.",
-    imagePrompt:
-      "cinematic animated film still, a colossal glowing kaiju monster emerging from " +
-      "the water of a futuristic neon harbor at night, reflections on wet docks, rain, " +
-      "city skyline silhouette, dramatic teal and magenta lighting, highly detailed, " +
-      "epic scale, stylized 3D animation, 8k",
-    motionPrompt:
-      "monster slowly rises, water cascades off its body, neon reflections ripple, " +
-      "slow upward camera tilt revealing its full height",
-    aspectRatio: "9:16",
-    social:
-      "Something woke up in the harbor tonight 🌃🦖 #kaiju #animation #aivideo #scifi",
-  },
-  {
-    id: "sky-fox",
-    title: "Sky Fox",
-    caption: "An anime fox spirit leaps across moonlit rooftops.",
-    imagePrompt:
-      "anime film still, a graceful nine-tailed fox spirit with glowing blue markings " +
-      "mid-leap over traditional rooftops, full moon, drifting cherry blossoms, " +
-      "Studio-Ghibli-inspired painterly background, dynamic pose, vivid colors, " +
-      "high detail, cinematic lighting",
-    motionPrompt:
-      "fox leaps across the frame, tails flowing, blossoms swirling, camera pans to " +
-      "follow the jump, soft motion blur",
-    aspectRatio: "9:16",
-    social:
-      "Chasing moonlight 🦊🌙 #anime #foxspirit #aianimation #reels",
-  },
-  {
-    id: "mecha-dawn",
-    title: "Mecha Dawn",
-    caption: "A towering mecha powers up at desert sunrise.",
-    imagePrompt:
-      "cinematic animated still, a giant humanoid mecha standing in a vast desert at " +
-      "sunrise, panels glowing as it powers up, sand blowing across the dunes, lens " +
-      "flare, orange and steel color palette, mechanical detail, epic low-angle shot, " +
-      "stylized 3D render, 8k",
-    motionPrompt:
-      "mecha eyes light up, energy lines pulse along the armor, slow heroic low-angle " +
-      "push-in, sand drifting in the wind",
-    aspectRatio: "9:16",
-    social:
-      "Systems online ⚙️🌅 #mecha #animation #aivideo #scifiart",
-  },
-  {
-    id: "crystal-dragon",
-    title: "Crystal Dragon",
-    caption: "A luminous dragon coils around a glowing crystal in an ice cavern.",
-    imagePrompt:
-      "cinematic fantasy animated still, a sleek luminous dragon coiled around a giant " +
-      "glowing blue crystal inside a vast ice cavern, refracted light, icy mist, " +
-      "intricate scales, magical glow, DreamWorks-style stylized 3D, dramatic rim " +
-      "lighting, high detail, 8k",
-    motionPrompt:
-      "dragon slowly turns its head toward camera, crystal pulses with light, mist " +
-      "drifts, slow orbiting camera move",
-    aspectRatio: "9:16",
-    social:
-      "Guardian of the frost crystal ❄️🐉 #dragon #fantasy #aianimation #shorts",
-  },
-];
+const data = JSON.parse(
+  readFileSync(new URL("../storyboard.json", import.meta.url), "utf8"),
+) as { clips: ClipSpec[] };
+
+export const CLIPS: ClipSpec[] = data.clips;
