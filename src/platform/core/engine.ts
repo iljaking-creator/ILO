@@ -12,11 +12,12 @@ import { ChannelError } from "../errors.js";
 import type { InboundMessage, OutboundMessage, RetrievedChunk } from "../types.js";
 import type { Repo } from "../db/repo.js";
 import type { Retriever } from "../kb/types.js";
+import { getMediaService, type MediaService } from "../media/higgsfield.js";
 import { ClaudeClient } from "./claude.js";
 import { trimHistory } from "./memory.js";
 import { buildSystemPrompt } from "./prompt.js";
 import { COMPANY_NAME } from "./persona.js";
-import { TOOL_DEFS, parseHandoff, parseLead } from "./tools.js";
+import { MEDIA_TOOL_DEF, TOOL_DEFS, parseGenerateImage, parseHandoff, parseLead } from "./tools.js";
 
 const TOP_K = 5;
 const HISTORY_LIMIT = 20;
@@ -29,12 +30,18 @@ export interface HandleOptions {
 
 export class AgentEngine {
   private claude?: ClaudeClient;
+  private readonly media: MediaService;
+  private readonly toolDefs: readonly unknown[];
 
   constructor(
     private readonly repo: Repo,
     private readonly retriever: Retriever,
   ) {
-    if (getConfig().capabilities.anthropic) this.claude = new ClaudeClient();
+    const caps = getConfig().capabilities;
+    if (caps.anthropic) this.claude = new ClaudeClient();
+    this.media = getMediaService();
+    // Advertise the media tool only when Higgsfield is configured.
+    this.toolDefs = caps.higgsfield ? [...TOOL_DEFS, MEDIA_TOOL_DEF] : TOOL_DEFS;
   }
 
   async handle(inbound: InboundMessage, opts: HandleOptions = {}): Promise<OutboundMessage> {
@@ -96,7 +103,7 @@ export class AgentEngine {
       const result = await this.claude.run({
         system,
         messages,
-        tools: TOOL_DEFS as unknown as Anthropic.Tool[],
+        tools: this.toolDefs as unknown as Anthropic.Tool[],
         onText: opts.onText,
       });
       finalText = result.text;
@@ -157,6 +164,18 @@ export class AgentEngine {
         await this.repo.insertHandoff(conversationId, contactId, { reason });
         await this.repo.writeAudit("handoff", "assistant", { conversationId, reason });
         return { message: "Ein Mitarbeiter wurde informiert und meldet sich zeitnah.", handoff: true };
+      }
+      if (name === "generate_image") {
+        const { prompt, aspect_ratio } = parseGenerateImage(input);
+        const result = await this.media.generateImage(prompt, aspect_ratio ?? "16:9");
+        await this.repo.writeAudit("image_generated", "assistant", { conversationId });
+        const url = result.imageUrls[0];
+        return {
+          message: url
+            ? `Bild erzeugt. Bild-URL: ${url}`
+            : `Bild konnte nicht erzeugt werden (Status: ${result.status}).`,
+          handoff: false,
+        };
       }
       return { message: `Unbekanntes Tool: ${name}`, handoff: false };
     } catch (err) {

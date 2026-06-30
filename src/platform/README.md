@@ -43,6 +43,21 @@ Supabase-Projekt (EU) anlegen, Schema anwenden:
 3. `get_advisors` prüfen (RLS aktiv, Security-Advisor sauber).
 4. Optional Wissensbasis befüllen: `COMPANY_SITE_URL=…` setzen, dann `npm run ingest`.
 
+## Firmen-Website + KI-Studio (Dogfooding)
+
+`web/index.html` ist die **einzigartige K&I-Firmenseite** (Cinematic Dark + WebGL) und nutzt
+das eigene Produkt: das Chat-Widget ist live eingebettet. Sie zeigt **alle Angebote** und ein
+**KI-Studio** (Higgsfield/Wan-Galerie + „Live generieren").
+
+- Design lokal eingebunden (kein CDN): GSAP + ScrollTrigger + SplitText, Lenis, Three.js unter
+  `web/vendor/` (Lizenzen: `web/vendor/NOTICE.md`). `prefers-reduced-motion` + WebGL-Fallback.
+- Media-API: `GET /api/media/gallery` (immer), `POST /api/media/generate` (gated auf `HF_CREDENTIALS`,
+  sonst 503), `GET /api/media/status/:id`. Vorgenerierte Galerie aus `web/clips.json`.
+- Vendor-Builds aktualisieren: `npm install gsap lenis three` → Dateien aus `node_modules` nach
+  `web/vendor/` kopieren (`gsap.min.js`, `ScrollTrigger.min.js`, `SplitText.min.js`,
+  `lenis/dist/lenis.min.js`, `three/build/three.module.min.js` **und** `three.core.min.js`).
+- Higgsfield-Clip-Galerie weiterhin unter `web/studio.html`.
+
 ## Kanäle aktivieren
 
 | Kanal     | Aktivierung                                      | Status ohne Zugang        |

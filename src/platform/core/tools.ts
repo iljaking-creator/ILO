@@ -19,6 +19,11 @@ export const requestHandoffSchema = z.object({
   reason: z.string(),
 });
 
+export const generateImageSchema = z.object({
+  prompt: z.string().min(3),
+  aspect_ratio: z.string().optional(),
+});
+
 /** JSON-schema tool definitions for the Anthropic Messages API. */
 export const TOOL_DEFS = [
   {
@@ -56,10 +61,32 @@ export const TOOL_DEFS = [
   },
 ] as const;
 
+/** Optional media tool — only advertised when Higgsfield is configured. */
+export const MEDIA_TOOL_DEF = {
+  name: "generate_image",
+  description:
+    "Erzeuge ein Vorschaubild aus einer kurzen Bildbeschreibung (z. B. für eine " +
+    "Idee, ein Mockup oder Social-Media-Visual). Nur nutzen, wenn die Person " +
+    "ausdrücklich ein Bild möchte.",
+  input_schema: {
+    type: "object" as const,
+    properties: {
+      prompt: { type: "string", description: "Bildbeschreibung" },
+      aspect_ratio: { type: "string", description: 'z. B. "16:9", "1:1", "9:16"' },
+    },
+    required: ["prompt"],
+    additionalProperties: false,
+  },
+} as const;
+
 export function parseLead(input: unknown): Lead {
   return captureLeadSchema.parse(input);
 }
 
 export function parseHandoff(input: unknown): { reason: string } {
   return requestHandoffSchema.parse(input);
+}
+
+export function parseGenerateImage(input: unknown): { prompt: string; aspect_ratio?: string } {
+  return generateImageSchema.parse(input);
 }

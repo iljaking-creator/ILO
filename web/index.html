@@ -3,36 +3,218 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ILO Studio — KI-Animationsclips</title>
+    <title>K&I Kundenwerke — KI, die für dich arbeitet</title>
     <meta
       name="description"
-      content="Mit Higgsfield generierte Animationsclips, bereit für Social Media."
+      content="K&I Kundenwerke baut KI-Kundenservice: Chatbots für Web, WhatsApp, Telegram, E-Mail und Telefon, KI-Bild-/Video-Generierung und Automatisierung — DSGVO-konform, mehrsprachig, rund um die Uhr."
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/site/site.css" />
   </head>
   <body>
-    <header class="hero">
-      <div class="hero__inner">
-        <span class="badge">ILO Studio × Higgsfield</span>
-        <h1>KI-Animationsclips für Social Media</h1>
-        <p class="lede">
-          Fünf original gestaltete Clips im Stil moderner Animation — generiert
-          mit Higgsfield, fertig zum Teilen als Reel, Short oder TikTok.
-        </p>
-        <div class="hero__meta" id="status">Lade Clips…</div>
-      </div>
+    <canvas id="webgl" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- NAV -->
+    <header class="nav" data-reveal>
+      <a class="nav__brand" href="#top">
+        <span class="dot"></span> K&amp;I <em>Kundenwerke</em>
+      </a>
+      <nav class="nav__links">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#kanaele">Kanäle</a>
+        <a href="#studio">KI-Studio</a>
+        <a href="#ablauf">Ablauf</a>
+        <a class="btn btn--ghost" data-open-chat href="#demo">Live-Demo ▸</a>
+      </nav>
     </header>
 
-    <main class="gallery" id="gallery" aria-live="polite"></main>
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <p class="hero__eyebrow" data-reveal>KI-Agentur · Made in EU · DSGVO-konform</p>
+        <h1 class="hero__title" data-split>KI, die für dich arbeitet.</h1>
+        <p class="hero__lead" data-reveal>
+          Wir bauen intelligenten Kundenservice über <strong>alle Kanäle</strong> — Web-Chat,
+          WhatsApp, Telegram, E-Mail und Telefon. Ein KI-Kern, der antwortet, Leads erfasst,
+          übergibt und sogar <strong>Bilder &amp; Videos</strong> generiert.
+        </p>
+        <div class="hero__cta" data-reveal>
+          <button class="btn btn--solid" data-magnet data-open-chat>Mit der KI sprechen</button>
+          <a class="btn btn--ghost" data-magnet href="#leistungen">Was wir bauen</a>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">scrollen</div>
+      </section>
+
+      <!-- TICKER -->
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          <span>WEB-CHAT</span><span>•</span><span>WHATSAPP</span><span>•</span>
+          <span>TELEGRAM</span><span>•</span><span>E-MAIL-BOT</span><span>•</span>
+          <span>TELEFON-KI</span><span>•</span><span>KI-BILDER</span><span>•</span>
+          <span>KI-VIDEOS</span><span>•</span><span>AUTOMATISIERUNG</span><span>•</span>
+          <span>WEB-CHAT</span><span>•</span><span>WHATSAPP</span><span>•</span>
+          <span>TELEGRAM</span><span>•</span><span>E-MAIL-BOT</span><span>•</span>
+          <span>TELEFON-KI</span><span>•</span><span>KI-BILDER</span><span>•</span>
+          <span>KI-VIDEOS</span><span>•</span><span>AUTOMATISIERUNG</span><span>•</span>
+        </div>
+      </div>
+
+      <!-- LEISTUNGEN -->
+      <section class="section" id="leistungen">
+        <header class="section__head" data-reveal>
+          <span class="section__num">01</span>
+          <h2 class="section__title" data-split>Was wir anbieten</h2>
+          <p class="section__sub">Alles, was modernen Kundenservice automatisiert — als ein System.</p>
+        </header>
+        <div class="cards">
+          <article class="card" data-reveal data-tilt>
+            <span class="card__ic">💬</span>
+            <h3>Multi-Channel-Chatbots</h3>
+            <p>Ein KI-Kern für Web, WhatsApp, Telegram und E-Mail. Antwortet 24/7,
+              erfasst Leads, übergibt an Menschen.</p>
+            <span class="card__tag">Web · WA · Telegram · E-Mail</span>
+          </article>
+          <article class="card" data-reveal data-tilt>
+            <span class="card__ic">📞</span>
+            <h3>Telefon-KI (Voicebot)</h3>
+            <p>Sprachassistent für Anrufe — versteht Anliegen, beantwortet Fragen,
+              leitet weiter. (Phase 2, Gerüst steht.)</p>
+            <span class="card__tag">Twilio Voice · STT/TTS</span>
+          </article>
+          <article class="card card--accent" data-reveal data-tilt>
+            <span class="card__ic">🎬</span>
+            <h3>KI-Bild &amp; Video</h3>
+            <p>Generiere Visuals und kurze Clips für Social Media direkt aus Text —
+              integriert über Higgsfield &amp; Open-Source (Wan&nbsp;2.2).</p>
+            <span class="card__tag">Higgsfield · Wan 2.2</span>
+          </article>
+          <article class="card" data-reveal data-tilt>
+            <span class="card__ic">⚙️</span>
+            <h3>Prozess-Automatisierung</h3>
+            <p>Wiederkehrende Abläufe automatisieren: Anfragen routen, Daten erfassen,
+              Systeme verbinden.</p>
+            <span class="card__tag">Workflows · Integrationen</span>
+          </article>
+          <article class="card" data-reveal data-tilt>
+            <span class="card__ic">🧠</span>
+            <h3>KI-Beratung &amp; Integration</h3>
+            <p>Von der Idee zur Lösung: Strategie, Wissensbasis aus euren Inhalten,
+              sichere Einbindung.</p>
+            <span class="card__tag">RAG · DSGVO · EU-Hosting</span>
+          </article>
+          <article class="card" data-reveal data-tilt>
+            <span class="card__ic">📊</span>
+            <h3>Analytics &amp; Leads</h3>
+            <p>Jede Konversation messbar: Themen, Leads, Übergaben — als Grundlage
+              für bessere Entscheidungen.</p>
+            <span class="card__tag">Audit · Lead-Capture</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- KANÄLE / EIN KERN -->
+      <section class="section section--core" id="kanaele">
+        <header class="section__head" data-reveal>
+          <span class="section__num">02</span>
+          <h2 class="section__title" data-split>Ein Kern. Alle Kanäle.</h2>
+          <p class="section__sub">Dieselbe Intelligenz, überall wo deine Kund:innen sind.</p>
+        </header>
+        <div class="core" data-reveal>
+          <div class="core__hub"><span>KI-Kern</span></div>
+          <ul class="core__nodes">
+            <li>Web-Chat</li><li>WhatsApp</li><li>Telegram</li>
+            <li>E-Mail</li><li>Telefon</li><li>KI-Medien</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- KI-STUDIO / MEDIA SHOWCASE -->
+      <section class="section" id="studio">
+        <header class="section__head" data-reveal>
+          <span class="section__num">03</span>
+          <h2 class="section__title" data-split>KI-Studio</h2>
+          <p class="section__sub">
+            Bild &amp; Video aus Text. <span id="studioMode" class="badge">lädt…</span>
+          </p>
+        </header>
+
+        <form class="studio__gen" id="genForm" data-reveal>
+          <input id="genPrompt" class="studio__input"
+            placeholder="Bildidee beschreiben, z. B. „neon-beleuchtete Skyline bei Nacht, cinematic"
+            maxlength="300" />
+          <button class="btn btn--solid" id="genBtn" type="submit">Live generieren</button>
+          <span class="studio__hint" id="genHint"></span>
+        </form>
+
+        <div class="gallery" id="gallery" data-reveal aria-live="polite"></div>
+      </section>
+
+      <!-- LIVE DEMO -->
+      <section class="section section--demo" id="demo">
+        <header class="section__head" data-reveal>
+          <span class="section__num">04</span>
+          <h2 class="section__title" data-split>Sprich mit unserer eigenen KI</h2>
+          <p class="section__sub">
+            Diese Website nutzt unser Produkt selbst — der Assistent unten rechts ist
+            live. (Ohne API-Schlüssel im Demo-Modus.)
+          </p>
+        </header>
+        <div class="demo__cta" data-reveal>
+          <button class="btn btn--solid btn--lg" data-magnet data-open-chat>Chat öffnen ▸</button>
+          <code class="demo__embed">&lt;script src="/widget.js" data-api-base=""&gt;&lt;/script&gt;</code>
+        </div>
+      </section>
+
+      <!-- ABLAUF -->
+      <section class="section" id="ablauf">
+        <header class="section__head" data-reveal>
+          <span class="section__num">05</span>
+          <h2 class="section__title" data-split>So läuft es ab</h2>
+        </header>
+        <ol class="steps">
+          <li data-reveal><span>1</span><h3>Verstehen</h3><p>Wir analysieren Ziele, Kanäle und eure Inhalte.</p></li>
+          <li data-reveal><span>2</span><h3>Bauen</h3><p>KI-Kern + Kanäle + Wissensbasis, DSGVO-konform.</p></li>
+          <li data-reveal><span>3</span><h3>Lernen</h3><p>Aus eurer Website/FAQ trainiert, mit Zitaten.</p></li>
+          <li data-reveal><span>4</span><h3>Skalieren</h3><p>Mehr Kanäle, mehr Automatisierung, messbar.</p></li>
+        </ol>
+      </section>
+
+      <!-- ÜBER UNS / STATS -->
+      <section class="section section--stats">
+        <div class="stats" data-reveal>
+          <div><b data-count="24">24/7</b><span>erreichbar</span></div>
+          <div><b data-count="5">5</b><span>Kanäle aus einem Kern</span></div>
+          <div><b>EU</b><span>Hosting &amp; DSGVO</span></div>
+          <div><b>∞</b><span>Sprachen (KI-nativ)</span></div>
+        </div>
+      </section>
+
+      <!-- KONTAKT -->
+      <section class="section section--contact">
+        <h2 class="contact__title" data-split>Bereit für KI, die wirklich arbeitet?</h2>
+        <p class="contact__sub" data-reveal>Lass dir vom Assistenten ein Angebot vorbereiten — oder schreib uns direkt.</p>
+        <button class="btn btn--solid btn--lg" data-magnet data-open-chat>Jetzt Kontakt aufnehmen</button>
+      </section>
+    </main>
 
     <footer class="footer">
-      <p>
-        Erstellt mit dem ILO Higgsfield-Connector. Clips entstehen aus
-        originellen Konzepten (keine geschützten Marken) und sind zur
-        Veröffentlichung freigegeben.
-      </p>
+      <span>© K&amp;I Kundenwerke</span>
+      <nav>
+        <a href="/studio.html">KI-Clip-Galerie</a>
+        <a href="/embed.html">Widget einbinden</a>
+        <a href="/demo.html">Demo-Seite</a>
+      </nav>
     </footer>
 
-    <script src="app.js" type="module"></script>
+    <!-- Vendored, self-hosted libraries (kein CDN) -->
+    <script src="/vendor/gsap.min.js"></script>
+    <script src="/vendor/ScrollTrigger.min.js"></script>
+    <script src="/vendor/SplitText.min.js"></script>
+    <script src="/vendor/lenis.min.js"></script>
+    <script type="module" src="/site/hero.js"></script>
+    <script src="/site/site.js" defer></script>
+
+    <!-- Eigenes Produkt: Live-Chat-Widget (Dogfooding) -->
+    <script src="/widget.js" data-api-base=""></script>
   </body>
 </html>

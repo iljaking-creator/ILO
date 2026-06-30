@@ -24,6 +24,9 @@ const EnvSchema = z.object({
   COMPANY_SITE_URL: z.string().default(""),
   VOYAGE_API_KEY: z.string().default(""),
 
+  // Media generation (Higgsfield). Format: KEY_ID:KEY_SECRET
+  HF_CREDENTIALS: z.string().default(""),
+
   // Channels
   TELEGRAM_BOT_TOKEN: z.string().default(""),
   IMAP_HOST: z.string().default(""),
@@ -52,6 +55,8 @@ export interface Capabilities {
   telegram: boolean;
   email: boolean;
   kbSite: boolean;
+  /** Higgsfield media generation (image/video) available. */
+  higgsfield: boolean;
 }
 
 export interface Config {
@@ -85,6 +90,7 @@ export function getConfig(): Config {
       env.IMAP_USER.length > 0 &&
       env.SMTP_HOST.length > 0,
     kbSite: env.COMPANY_SITE_URL.length > 0,
+    higgsfield: env.HF_CREDENTIALS.includes(":"),
   };
 
   const mode: Mode = !capabilities.anthropic
