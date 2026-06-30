@@ -4,6 +4,9 @@ A lightweight TypeScript connector for the [Higgsfield](https://higgsfield.ai) A
 generation API. It wraps Higgsfield's submit-then-poll workflow so you can
 generate **images** and **videos** with a single awaited call.
 
+> 📚 **Projekt-Doku & Gesamtbild:** siehe [`docs/`](./docs/) — Architektur, Meisterplan,
+> Status und Runbook der K&I-Kundenservice-Plattform. Lokal starten: [`START_LOCAL.md`](./START_LOCAL.md).
+
 ## Features
 
 - 🔑 Credential handling (`KEY_ID:KEY_SECRET` via argument or `HF_CREDENTIALS`)
