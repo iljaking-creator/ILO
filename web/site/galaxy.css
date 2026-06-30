@@ -1,0 +1,95 @@
+/* ============================================================
+   Galaxy Skill-Showcase — layered on top of site.css (same brand).
+   Load order: site.css (tokens + .btn/.section/.card/.badge) then galaxy.css.
+   ============================================================ */
+
+/* The galaxy canvas sits behind everything; soften site.css's gradient veil. */
+#galaxy { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: -2; display: block; }
+body.galaxy::before {
+  background:
+    radial-gradient(1200px 800px at 80% -10%, rgba(124,92,255,0.10), transparent 60%),
+    linear-gradient(180deg, rgba(5,6,10,0) 60%, rgba(5,6,10,0.55) 100%);
+}
+
+/* Top bar (reuses .nav look but scoped here for the showcase) */
+.gx-top {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 60;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px clamp(16px, 4vw, 48px);
+  backdrop-filter: blur(8px);
+  background: linear-gradient(180deg, rgba(5,6,10,.6), rgba(5,6,10,0));
+}
+.gx-top a.home { font-weight: 800; letter-spacing: -.02em; display: flex; gap: .5em; align-items: center; }
+.gx-top .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--neon); box-shadow: var(--glow); }
+.gx-top nav { display: flex; gap: 16px; color: var(--muted); font-size: .92rem; align-items: center; }
+.gx-top nav a:hover { color: var(--ink); }
+
+/* Stations — one full-viewport section per planet/skill */
+.stations { position: relative; z-index: 1; }
+.station {
+  min-height: 100vh; display: flex; align-items: center;
+  padding: 0 clamp(16px, 7vw, 120px);
+}
+.station:nth-child(even) { justify-content: flex-end; }
+
+/* Glass content panel */
+.panel {
+  max-width: 540px; padding: 34px 36px; border-radius: 22px;
+  background: rgba(10, 13, 22, 0.55);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(14px) saturate(1.1);
+  box-shadow: 0 30px 80px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.04);
+}
+.panel__kicker { display: inline-flex; align-items: center; gap: .5em; color: var(--neon); letter-spacing: .22em; text-transform: uppercase; font-size: .72rem; margin: 0 0 1rem; }
+.panel__kicker .idx { color: var(--neon-2); }
+.panel h2 { font-size: clamp(1.9rem, 4.5vw, 3.4rem); line-height: 1.02; letter-spacing: -.03em; margin: 0 0 .8rem; color: #f3f7ff; }
+.panel p { color: var(--muted); font-size: 1.05rem; margin: 0 0 1.2rem; }
+.panel ul { list-style: none; padding: 0; margin: 0 0 1.4rem; display: flex; flex-wrap: wrap; gap: 8px; }
+.panel ul li { font-size: .8rem; color: var(--neon-3); border: 1px solid var(--line); border-radius: 999px; padding: 5px 11px; background: rgba(255,255,255,.02); }
+.panel .btn { margin-right: 8px; }
+
+/* Hero / intro station */
+.gx-hero { text-align: center; flex-direction: column; justify-content: center; gap: 1rem; }
+.gx-hero__eyebrow { color: var(--neon); letter-spacing: .3em; text-transform: uppercase; font-size: .75rem; }
+.gx-hero__title { font-size: clamp(2.6rem, 8vw, 6.5rem); line-height: .95; letter-spacing: -.04em; font-weight: 800; margin: .4rem auto; max-width: 16ch; color: #f3f7ff; text-shadow: 0 0 50px rgba(54,241,205,.25); }
+.gx-hero__lead { color: var(--muted); max-width: 56ch; margin: 0 auto 1.4rem; font-size: 1.15rem; }
+.gx-hero__scroll { margin-top: 1.5rem; font-size: .72rem; letter-spacing: .3em; text-transform: uppercase; color: var(--muted); }
+.gx-hero__scroll::after { content: ""; display: block; width: 1px; height: 40px; margin: 10px auto 0; background: linear-gradient(var(--neon), transparent); }
+
+/* Constellation progress (right rail) */
+.constellation { position: fixed; right: 22px; top: 50%; transform: translateY(-50%); z-index: 40; display: flex; flex-direction: column; gap: 14px; }
+.constellation a { width: 9px; height: 9px; border-radius: 50%; background: #2a3146; transition: all .3s var(--ease); position: relative; }
+.constellation a:hover, .constellation a.active { background: var(--neon); box-shadow: var(--glow); transform: scale(1.3); }
+
+/* KI-Medien station gallery (reuses .gallery/.tile from site.css) */
+.station--media .panel { max-width: 760px; }
+.station--media .studio__gen { margin-top: 1rem; }
+
+/* Branchen station */
+.station--branchen { min-height: auto; padding-block: clamp(60px, 12vh, 120px); flex-direction: column; align-items: stretch; }
+.station--branchen .section__head { text-align: center; margin-inline: auto; }
+
+/* Final CTA station */
+.station--final { text-align: center; flex-direction: column; justify-content: center; gap: 1.2rem; }
+.station--final h2 { font-size: clamp(2rem, 6vw, 4.4rem); letter-spacing: -.03em; color: #f3f7ff; margin: 0; max-width: 18ch; }
+.station--final p { color: var(--muted); margin: .4rem auto 1rem; max-width: 50ch; }
+
+/* Footer */
+.gx-foot { position: relative; z-index: 1; border-top: 1px solid var(--line); padding: 28px clamp(16px,6vw,80px); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; color: var(--muted); font-size: .9rem; backdrop-filter: blur(6px); background: rgba(5,6,10,.4); }
+.gx-foot a:hover { color: var(--neon); }
+
+/* Fallback when WebGL is unavailable: give each station a static premium backdrop */
+body.no-webgl { background:
+  radial-gradient(900px 600px at 20% 10%, rgba(124,92,255,.18), transparent 60%),
+  radial-gradient(900px 600px at 80% 90%, rgba(54,241,205,.14), transparent 60%),
+  var(--bg); }
+body.no-webgl .panel { background: rgba(10,13,22,.78); }
+
+@media (prefers-reduced-motion: reduce) {
+  .gx-hero__scroll::after { display: none; }
+}
+@media (max-width: 760px) {
+  .station, .station:nth-child(even) { justify-content: center; padding-inline: 18px; }
+  .constellation { display: none; }
+  .gx-top nav a:not(.btn) { display: none; }
+}

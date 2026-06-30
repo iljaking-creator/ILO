@@ -53,6 +53,31 @@ export const SEED_FAQ: KbChunk[] = [
       "Telefon-KI. Ein gemeinsamer KI-Kern bedient alle Kanäle einheitlich.",
   },
   {
+    id: "seed-telefon-ki",
+    sourceUrl: "seed://faq/telefon-ki",
+    content:
+      "Telefon-KI / Voicebot: Ein KI-Sprachassistent nimmt Anrufe entgegen, versteht " +
+      "Anliegen, beantwortet Fragen und leitet bei Bedarf weiter. Dazu bieten wir " +
+      "KI-Stimmen (Sprachklon), Vertonung und Dubbing in mehreren Sprachen.",
+  },
+  {
+    id: "seed-ki-medien",
+    sourceUrl: "seed://faq/ki-medien",
+    content:
+      "KI-Medien: Wir generieren Bilder, kurze Videos und 3D-Objekte aus Text für " +
+      "Social Media, Werbung und Websites — inklusive Upscaling, Freistellen (Hintergrund " +
+      "entfernen), Reframe und einem Virality-Check. Technik: Higgsfield und Open-Source (Wan).",
+  },
+  {
+    id: "seed-branchen",
+    sourceUrl: "seed://faq/branchen-loesungen",
+    content:
+      "Branchen-Lösungen für kleine Unternehmen: Für Airbnb/Immobilien bauen wir eine " +
+      "scroll-gesteuerte Live-Room-Tour (virtueller Rundgang durch die Wohnung). Für " +
+      "Restaurants Reservierungs-/Menü-Bots und KI-Food-Visuals. Für Friseure/Praxen " +
+      "KI-Terminbuchung mit Erinnerungen. Maßgeschneidert und DSGVO-konform.",
+  },
+  {
     id: "seed-datenschutz",
     sourceUrl: "seed://faq/datenschutz",
     content:

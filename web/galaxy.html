@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>K&I Kundenwerke — Die Galaxie unserer KI-Lösungen</title>
+    <meta name="description" content="Eine Reise durch alles, was K&I Kundenwerke baut: Chatbots, Telefon-KI, KI-Stimmen, KI-Bild/Video/3D, Automatisierung und Branchen-Lösungen wie Airbnb-Live-Tours." />
+    <link rel="stylesheet" href="/site/site.css" />
+    <link rel="stylesheet" href="/site/galaxy.css" />
+  </head>
+  <body class="galaxy">
+    <canvas id="galaxy" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="gx-top">
+      <a class="home" href="/"><span class="dot"></span> K&amp;I <em style="color:var(--muted);font-weight:500">Kundenwerke</em></a>
+      <nav>
+        <a href="/">Hauptseite</a>
+        <a href="/tours/airbnb.html">Airbnb-Tour</a>
+        <a class="btn btn--ghost" data-open-chat data-magnet href="#s1">Live-Demo ▸</a>
+      </nav>
+    </header>
+
+    <aside class="constellation" aria-hidden="true">
+      <a href="#s0" data-c></a><a href="#s1" data-c></a><a href="#s2" data-c></a>
+      <a href="#s3" data-c></a><a href="#s4" data-c></a><a href="#s5" data-c></a>
+      <a href="#s6" data-c></a><a href="#s7" data-c></a>
+    </aside>
+
+    <main class="stations">
+      <!-- 0 — Intro -->
+      <section class="station gx-hero" id="s0">
+        <p class="gx-hero__eyebrow" data-reveal>Eine Reise durch unsere KI-Galaxie</p>
+        <h1 class="gx-hero__title" data-split>Alles, was wir für dich bauen.</h1>
+        <p class="gx-hero__lead" data-reveal>
+          Scrolle durch das Universum von <strong>K&amp;I Kundenwerke</strong> — jeder Planet ein
+          Werkzeug: Chatbots über alle Kanäle, Telefon-KI, KI-Stimmen, KI-Bild/Video/3D,
+          Automatisierung und maßgeschneiderte Branchen-Lösungen.
+        </p>
+        <div data-reveal>
+          <button class="btn btn--solid btn--lg" data-magnet data-open-chat>Mit der KI sprechen</button>
+          <a class="btn btn--ghost btn--lg" data-magnet href="#s1">Reise starten ▸</a>
+        </div>
+        <div class="gx-hero__scroll" aria-hidden="true">scrollen</div>
+      </section>
+
+      <!-- 1 — Web-Chat -->
+      <section class="station" id="s1">
+        <div class="panel" data-reveal>
+          <p class="panel__kicker"><span class="idx">01</span> · Web-Chat</p>
+          <h2 data-split>Der Assistent, der nie schläft.</h2>
+          <p>Ein KI-Chat für deine Website — beantwortet Fragen 24/7, erfasst Leads und übergibt
+            bei Bedarf an Menschen. Diese Galaxie nutzt ihn selbst: probier ihn unten rechts.</p>
+          <ul><li>24/7</li><li>Lead-Erfassung</li><li>Mensch-Übergabe</li><li>mehrsprachig</li></ul>
+          <button class="btn btn--solid" data-magnet data-open-chat>Jetzt ausprobieren</button>
+        </div>
+      </section>
+
+      <!-- 2 — Multi-Channel -->
+      <section class="station" id="s2">
+        <div class="panel" data-reveal>
+          <p class="panel__kicker"><span class="idx">02</span> · Alle Kanäle</p>
+          <h2 data-split>WhatsApp, Telegram, E-Mail — ein Kern.</h2>
+          <p>Dieselbe Intelligenz überall, wo deine Kund:innen sind. Eine Wissensbasis, ein
+            Charakter, jeder Kanal konsistent.</p>
+          <ul><li>WhatsApp</li><li>Telegram</li><li>E-Mail-Bot</li><li>Web</li></ul>
+        </div>
+      </section>
+
+      <!-- 3 — Telefon-KI & Stimmen -->
+      <section class="station" id="s3">
+        <div class="panel" data-reveal>
+          <p class="panel__kicker"><span class="idx">03</span> · Telefon-KI & Stimmen</p>
+          <h2 data-split>Eine Stimme, die für dich spricht.</h2>
+          <p>Voicebot für Anrufe plus KI-Stimmen: Sprachklon, Vertonung und Dubbing für mehrere
+            Sprachen — deine Marke, hörbar gemacht.</p>
+          <ul><li>Voicebot</li><li>Voice-Clone</li><li>Dubbing</li><li>STT/TTS</li></ul>
+        </div>
+      </section>
+
+      <!-- 4 — KI-Medien -->
+      <section class="station station--media" id="s4">
+        <div class="panel" data-reveal>
+          <p class="panel__kicker"><span class="idx">04</span> · KI-Medien <span class="badge" id="studioMode">lädt…</span></p>
+          <h2 data-split>Bild, Video & 3D aus Text.</h2>
+          <p>Generiere Visuals, kurze Clips und 3D-Objekte für Social Media und Kampagnen —
+            plus Upscaling, Freistellen, Reframe und Virality-Check.</p>
+          <ul><li>Bild</li><li>Video</li><li>3D</li><li>Upscale</li><li>Reframe</li><li>Marketing-Studio</li></ul>
+          <form class="studio__gen" id="genForm">
+            <input id="genPrompt" class="studio__input" maxlength="300"
+              placeholder="Bildidee, z. B. „neon-beleuchtete Skyline bei Nacht, cinematic" />
+            <button class="btn btn--solid" id="genBtn" type="submit">Live generieren</button>
+            <span class="studio__hint" id="genHint"></span>
+          </form>
+          <div class="gallery" id="gallery" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- 5 — Automatisierung & Beratung -->
+      <section class="station" id="s5">
+        <div class="panel" data-reveal>
+          <p class="panel__kicker"><span class="idx">05</span> · Automatisierung & Beratung</p>
+          <h2 data-split>Vom Wissen zur Lösung.</h2>
+          <p>Wir trainieren die KI aus euren Inhalten (Website, FAQ, Dokumente), automatisieren
+            Abläufe und integrieren sicher — DSGVO-konform, Daten in der EU.</p>
+          <ul><li>RAG-Wissensbasis</li><li>Workflows</li><li>Analytics</li><li>DSGVO · EU</li></ul>
+        </div>
+      </section>
+
+      <!-- 6 — Branchen-Lösungen -->
+      <section class="station station--branchen" id="s6">
+        <header class="section__head" data-reveal>
+          <span class="section__num">06 · Für andere Unternehmen</span>
+          <h2 class="section__title" data-split>Was wir auch bauen können</h2>
+          <p class="section__sub">Maßgeschneiderte KI-Erlebnisse für kleine Unternehmen.</p>
+        </header>
+        <div class="cards">
+          <a class="card card--accent" data-reveal data-tilt href="/tours/airbnb.html">
+            <span class="card__ic">🏠</span>
+            <h3>Airbnb / Immobilien — Live-Room-Tour</h3>
+            <p>Ein scroll-gesteuerter Rundgang durch die Wohnung: Raum für Raum, mit Animation
+              und Hotspots. Mehr Buchungen durch echtes Raumgefühl.</p>
+            <span class="card__tag">Live-Tour ansehen ▸</span>
+          </a>
+          <article class="card" data-reveal data-tilt>
+            <span class="card__ic">🍽️</span>
+            <h3>Restaurant & Gastro</h3>
+            <p>Reservierungs- & Menü-Bot, appetitliche KI-Food-Visuals und ein Bestell-Assistent —
+              weniger Telefon, mehr Gäste.</p>
+            <span class="card__tag">Bot · KI-Food-Visuals</span>
+          </article>
+          <article class="card" data-reveal data-tilt>
+            <span class="card__ic">📅</span>
+            <h3>Termin-Buchung</h3>
+            <p>Für Friseur, Praxis oder Studio: KI-Assistent für Termine, Erinnerungen und
+              Rückfragen — rund um die Uhr.</p>
+            <span class="card__tag">Booking · Reminders</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- 7 — Final / Skill-Showcase summary -->
+      <section class="station station--final" id="s7">
+        <p class="gx-hero__eyebrow" data-reveal>Das maximale Produkt</p>
+        <h2 data-split>Eine Galaxie. Unendliche Möglichkeiten.</h2>
+        <p data-reveal>Chatbots · Telefon-KI · KI-Stimmen · KI-Bild/Video/3D · Automatisierung ·
+          Branchen-Lösungen — alles aus einer Hand, DSGVO-konform, einzigartig für dich gebaut.</p>
+        <div data-reveal>
+          <button class="btn btn--solid btn--lg" data-magnet data-open-chat>Projekt starten</button>
+          <a class="btn btn--ghost btn--lg" data-magnet href="/">Zur Hauptseite</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="gx-foot">
+      <span>© K&amp;I Kundenwerke — Skill-Showcase</span>
+      <nav style="display:flex;gap:18px">
+        <a href="/">Hauptseite</a><a href="/tours/airbnb.html">Airbnb-Tour</a><a href="/studio.html">Clip-Galerie</a>
+      </nav>
+    </footer>
+
+    <!-- Vendored libraries (kein CDN) -->
+    <script src="/vendor/gsap.min.js"></script>
+    <script src="/vendor/ScrollTrigger.min.js"></script>
+    <script src="/vendor/SplitText.min.js"></script>
+    <script src="/vendor/lenis.min.js"></script>
+    <script type="module" src="/site/galaxy.js"></script>
+    <script src="/site/site.js" defer></script>
+    <script src="/widget.js" data-api-base=""></script>
+
+    <!-- Constellation active-dot highlighter (dependency-free) -->
+    <script>
+      (function () {
+        var dots = Array.prototype.slice.call(document.querySelectorAll(".constellation a"));
+        var sections = dots.map(function (d) { return document.querySelector(d.getAttribute("href")); });
+        if (!("IntersectionObserver" in window)) return;
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              var i = sections.indexOf(e.target);
+              dots.forEach(function (d, j) { d.classList.toggle("active", j === i); });
+            }
+          });
+        }, { threshold: 0.5 });
+        sections.forEach(function (s) { if (s) io.observe(s); });
+      })();
+    </script>
+  </body>
+</html>

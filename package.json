@@ -24,6 +24,7 @@
     "mcp": "node --import tsx src/mcp-server.ts",
     "generate": "node --import tsx src/generate-clips.ts",
     "serve": "node --import tsx scripts/serve.ts",
+    "start": "npm run build && npm run start:server",
     "start:server": "node --import tsx src/platform/server/index.ts",
     "ingest": "node --import tsx src/platform/kb/ingest.ts",
     "test": "node --import tsx --test src/platform/tests/*.test.ts"

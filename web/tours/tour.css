@@ -1,0 +1,84 @@
+/* ============================================================
+   Airbnb / Immobilien — Live-Room-Tour (horizontaler Scroll-Rundgang).
+   Reuses brand tokens from /site/site.css. Procedural rooms (CSS only),
+   als Vorlage: Kunde ersetzt die Szenen später durch Fotos/360°/KI-Clips.
+   ============================================================ */
+* { box-sizing: border-box; }
+body.tour { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font);
+  overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+
+.t-top { position: fixed; top: 0; left: 0; right: 0; z-index: 60; display: flex;
+  align-items: center; justify-content: space-between; padding: 14px clamp(16px,4vw,40px);
+  background: linear-gradient(180deg, rgba(5,6,10,.7), rgba(5,6,10,0)); backdrop-filter: blur(8px); }
+.t-top .home { font-weight: 800; display: flex; gap: .5em; align-items: center; }
+.t-top .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--neon); box-shadow: var(--glow); }
+.t-top nav { display: flex; gap: 16px; color: var(--muted); font-size: .9rem; }
+.t-top nav a:hover { color: var(--ink); }
+
+/* Progress bar */
+.t-prog { position: fixed; left: 0; top: 0; height: 3px; width: 0%; z-index: 70;
+  background: linear-gradient(90deg, var(--neon), var(--neon-2)); box-shadow: var(--glow); }
+
+/* Intro */
+.t-intro { min-height: 80vh; display: flex; flex-direction: column; justify-content: center;
+  text-align: center; padding: 0 clamp(16px,6vw,80px); max-width: 900px; margin: 0 auto; }
+.t-intro .eyebrow { color: var(--neon); letter-spacing: .25em; text-transform: uppercase; font-size: .75rem; }
+.t-intro h1 { font-size: clamp(2.2rem,6vw,4.5rem); letter-spacing: -.03em; margin: .4rem 0 .8rem; color: #f3f7ff; }
+.t-intro p { color: var(--muted); font-size: 1.15rem; max-width: 60ch; margin: 0 auto 1.4rem; }
+.t-intro .hint { font-size: .8rem; color: var(--muted); letter-spacing: .2em; text-transform: uppercase; margin-top: 1.5rem; }
+
+/* Horizontal track */
+.track-wrap { position: relative; height: 100vh; overflow: hidden; }
+.track { display: flex; height: 100vh; width: max-content; will-change: transform; }
+.room { position: relative; width: 100vw; height: 100vh; overflow: hidden; flex: 0 0 100vw;
+  display: flex; align-items: flex-end; }
+
+/* Procedural room scene — layered gradients build a sense of space + depth */
+.room__scene { position: absolute; inset: 0; }
+.room__floor { position: absolute; left: -10%; right: -10%; bottom: 0; height: 42%;
+  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(0,0,0,.5));
+  transform: perspective(800px) rotateX(58deg); transform-origin: bottom; opacity: .8; }
+.room__wall { position: absolute; inset: 0; }
+.room__light { position: absolute; width: 60vh; height: 60vh; border-radius: 50%; filter: blur(60px); opacity: .55; }
+.room__window { position: absolute; top: 14%; width: 16vw; height: 42vh; border-radius: 8px;
+  background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(180,220,255,.3)); box-shadow: 0 0 80px rgba(180,220,255,.4); }
+.room__furn { position: absolute; bottom: 18%; border-radius: 14px; background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08); box-shadow: 0 30px 60px rgba(0,0,0,.5); }
+
+/* Caption card */
+.room__card { position: relative; z-index: 3; margin: 0 0 9vh clamp(20px,6vw,90px);
+  max-width: 420px; padding: 26px 28px; border-radius: 18px;
+  background: rgba(10,13,22,.6); border: 1px solid var(--line); backdrop-filter: blur(12px);
+  box-shadow: 0 30px 70px rgba(0,0,0,.5); }
+.room__num { color: var(--neon-2); letter-spacing: .2em; font-size: .75rem; font-weight: 700; }
+.room__card h2 { margin: .3rem 0 .5rem; font-size: clamp(1.6rem,3.5vw,2.6rem); letter-spacing: -.02em; color: #f3f7ff; }
+.room__card p { margin: 0; color: var(--muted); }
+.room__tags { margin-top: 1rem; display: flex; gap: 8px; flex-wrap: wrap; }
+.room__tags span { font-size: .76rem; color: var(--neon-3); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; }
+
+/* Hotspots */
+.hotspot { position: absolute; z-index: 4; width: 22px; height: 22px; border-radius: 50%;
+  background: rgba(54,241,205,.25); border: 1px solid var(--neon); cursor: pointer; }
+.hotspot::after { content: ""; position: absolute; inset: 6px; border-radius: 50%; background: var(--neon); box-shadow: var(--glow); }
+.hotspot::before { content: attr(data-label); position: absolute; left: 30px; top: 50%; transform: translateY(-50%);
+  white-space: nowrap; background: rgba(10,13,22,.9); border: 1px solid var(--line); color: var(--ink);
+  padding: 6px 10px; border-radius: 8px; font-size: .82rem; opacity: 0; transition: opacity .25s; pointer-events: none; }
+.hotspot:hover::before { opacity: 1; }
+.hotspot.pulse { animation: hs 2.2s infinite; }
+@keyframes hs { 0%,100%{ box-shadow: 0 0 0 0 rgba(54,241,205,.5);} 50%{ box-shadow: 0 0 0 14px rgba(54,241,205,0);} }
+
+/* Outro CTA */
+.t-outro { min-height: 70vh; display: flex; flex-direction: column; justify-content: center;
+  text-align: center; padding: 0 clamp(16px,6vw,80px); max-width: 800px; margin: 0 auto; }
+.t-outro h2 { font-size: clamp(1.8rem,5vw,3.4rem); letter-spacing: -.03em; color: #f3f7ff; margin: 0 0 .6rem; max-width: 20ch; margin-inline: auto; }
+.t-outro p { color: var(--muted); margin: 0 auto 1.6rem; max-width: 56ch; }
+
+/* Fallback: stacked vertical rooms when no GSAP / reduced motion */
+body.tour.stacked .track-wrap { height: auto; overflow: visible; }
+body.tour.stacked .track { flex-direction: column; width: 100%; height: auto; }
+body.tour.stacked .room { width: 100%; height: 90vh; flex: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hotspot.pulse { animation: none; }
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Live-Room-Tour — K&I Kundenwerke (Beispiel)</title>
+    <meta name="description" content="Beispiel einer scroll-gesteuerten Live-Room-Tour für Airbnb/Immobilien: Raum für Raum durch die Wohnung — von K&I Kundenwerke." />
+    <link rel="stylesheet" href="/site/site.css" />
+    <link rel="stylesheet" href="/tours/tour.css" />
+  </head>
+  <body class="tour">
+    <div class="t-prog" aria-hidden="true"></div>
+
+    <header class="t-top">
+      <a class="home" href="/galaxy.html"><span class="dot"></span> K&amp;I Live-Room-Tour</a>
+      <nav>
+        <a href="/galaxy.html">◂ Showcase</a>
+        <a href="/">Hauptseite</a>
+        <a id="askBtn" href="#">Anfragen</a>
+      </nav>
+    </header>
+
+    <!-- Intro -->
+    <section class="t-intro">
+      <p class="eyebrow">Branchen-Lösung · Airbnb & Immobilien</p>
+      <h1>Geh durch die Wohnung — beim Scrollen.</h1>
+      <p>
+        So fühlt sich ein Objekt schon vor der Buchung an: ein flüssiger Rundgang von Raum zu Raum,
+        mit Tiefe, Licht und Hotspots. Dieses Beispiel ist <strong>prozedural</strong> gebaut — bei
+        euch ersetzen wir die Szenen durch eure <strong>Fotos, 360°-Aufnahmen oder KI-Clips</strong>.
+      </p>
+      <p class="hint">↓ scrollen = durch die Räume gehen →</p>
+    </section>
+
+    <!-- Horizontal walkthrough -->
+    <div class="track-wrap">
+      <div class="track">
+        <!-- Room 1 -->
+        <section class="room">
+          <div class="room__scene">
+            <div class="room__wall" style="background:radial-gradient(120vh 120vh at 65% 30%, rgba(54,241,205,.18), transparent 60%), linear-gradient(180deg,#0a1418,#070b0e)"></div>
+            <div class="room__light" data-depth="0.4" style="background:#36f1cd; left:8%; top:18%"></div>
+            <div class="room__window" data-depth="0.9" style="left:60%; background:linear-gradient(180deg,#eaffff,#a8e6ff)"></div>
+            <div class="room__furn" data-depth="1.3" style="left:12%; width:30vw; height:15vh; bottom:17%"></div>
+            <div class="room__furn" data-depth="1.6" style="left:30vw; width:12vw; height:7vh; bottom:14%"></div>
+            <div class="hotspot pulse" data-label="Gemütliche Sofa-Ecke" style="left:22%; top:60%"></div>
+            <div class="hotspot" data-label="Großes Südfenster" style="left:64%; top:40%"></div>
+          </div>
+          <div class="room__card">
+            <span class="room__num">Raum 01 / 05</span>
+            <h2>Wohnzimmer</h2>
+            <p>Heller Wohnbereich mit Südfenster, Smart-TV und Sofa für vier Personen.</p>
+            <div class="room__tags"><span>32 m²</span><span>Smart-TV</span><span>Tageslicht</span></div>
+          </div>
+        </section>
+
+        <!-- Room 2 -->
+        <section class="room">
+          <div class="room__scene">
+            <div class="room__wall" style="background:radial-gradient(120vh 120vh at 40% 30%, rgba(255,209,102,.20), transparent 60%), linear-gradient(180deg,#16110a,#0b0805)"></div>
+            <div class="room__light" data-depth="0.4" style="background:#ffd166; right:10%; top:16%"></div>
+            <div class="room__furn" data-depth="1.2" style="left:18%; width:34vw; height:9vh; bottom:30%"></div>
+            <div class="room__furn" data-depth="1.5" style="left:20%; width:34vw; height:14vh; bottom:14%"></div>
+            <div class="hotspot pulse" data-label="Voll ausgestattete Küche" style="left:38%; top:54%"></div>
+          </div>
+          <div class="room__card">
+            <span class="room__num">Raum 02 / 05</span>
+            <h2>Küche</h2>
+            <p>Voll ausgestattet: Induktion, Geschirrspüler, Espressomaschine und Essbar.</p>
+            <div class="room__tags"><span>Induktion</span><span>Nespresso</span><span>Essbar</span></div>
+          </div>
+        </section>
+
+        <!-- Room 3 -->
+        <section class="room">
+          <div class="room__scene">
+            <div class="room__wall" style="background:radial-gradient(120vh 120vh at 55% 35%, rgba(124,92,255,.22), transparent 60%), linear-gradient(180deg,#100b1e,#08060f)"></div>
+            <div class="room__light" data-depth="0.4" style="background:#7c5cff; left:12%; top:22%"></div>
+            <div class="room__window" data-depth="0.9" style="left:66%; height:36vh; background:linear-gradient(180deg,#d9ccff,#7c5cff)"></div>
+            <div class="room__furn" data-depth="1.4" style="left:16%; width:36vw; height:18vh; bottom:14%"></div>
+            <div class="hotspot pulse" data-label="Kingsize-Bett" style="left:30%; top:64%"></div>
+          </div>
+          <div class="room__card">
+            <span class="room__num">Raum 03 / 05</span>
+            <h2>Schlafzimmer</h2>
+            <p>Ruhiges Schlafzimmer mit Kingsize-Bett, Verdunklung und Ankleide.</p>
+            <div class="room__tags"><span>Kingsize</span><span>Verdunklung</span><span>Ankleide</span></div>
+          </div>
+        </section>
+
+        <!-- Room 4 -->
+        <section class="room">
+          <div class="room__scene">
+            <div class="room__wall" style="background:radial-gradient(120vh 120vh at 50% 30%, rgba(34,211,238,.20), transparent 60%), linear-gradient(180deg,#08171b,#05080a)"></div>
+            <div class="room__light" data-depth="0.4" style="background:#22d3ee; right:14%; top:20%"></div>
+            <div class="room__furn" data-depth="1.3" style="left:22%; width:18vw; height:20vh; bottom:16%"></div>
+            <div class="hotspot pulse" data-label="Regendusche" style="left:30%; top:50%"></div>
+          </div>
+          <div class="room__card">
+            <span class="room__num">Raum 04 / 05</span>
+            <h2>Badezimmer</h2>
+            <p>Modernes Bad mit Regendusche, Fußbodenheizung und Föhn.</p>
+            <div class="room__tags"><span>Regendusche</span><span>Fußbodenheizung</span></div>
+          </div>
+        </section>
+
+        <!-- Room 5 -->
+        <section class="room">
+          <div class="room__scene">
+            <div class="room__wall" style="background:radial-gradient(130vh 130vh at 60% 20%, rgba(255,138,76,.28), transparent 60%), linear-gradient(180deg,#1a0f0a,#0a0606)"></div>
+            <div class="room__light" data-depth="0.4" style="background:#ff8a4c; left:50%; top:10%"></div>
+            <div class="room__window" data-depth="0.8" style="left:8%; width:70vw; height:40vh; border-radius:0; background:linear-gradient(180deg,#ffd9a8,#ff8a4c)"></div>
+            <div class="room__furn" data-depth="1.4" style="left:18%; width:14vw; height:10vh; bottom:16%"></div>
+            <div class="hotspot pulse" data-label="Sonnenuntergang über der Küste" style="left:46%; top:34%"></div>
+          </div>
+          <div class="room__card">
+            <span class="room__num">Raum 05 / 05</span>
+            <h2>Balkon mit Meerblick</h2>
+            <p>Privater Südbalkon mit Lounge und Blick auf die Küste — perfekt zum Sonnenuntergang.</p>
+            <div class="room__tags"><span>Meerblick</span><span>Lounge</span><span>Südlage</span></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Outro -->
+    <section class="t-outro">
+      <h2>Mehr Buchungen durch echtes Raumgefühl.</h2>
+      <p>
+        Wir bauen diese Live-Tour mit euren echten Aufnahmen — als eigene Seite oder eingebettet
+        in euer Inserat. Auf Wunsch mit KI-generierten Räumen, Sprecher-Stimme und automatischer
+        Gäste-Beantwortung über unseren Chatbot.
+      </p>
+      <div>
+        <a class="btn btn--solid btn--lg" id="askBtn2" href="#">Für mein Objekt anfragen</a>
+        <a class="btn btn--ghost btn--lg" href="/galaxy.html">◂ Zurück zum Showcase</a>
+      </div>
+    </section>
+
+    <script src="/vendor/gsap.min.js"></script>
+    <script src="/vendor/ScrollTrigger.min.js"></script>
+    <script src="/vendor/lenis.min.js"></script>
+    <script src="/tours/tour.js"></script>
+
+    <!-- Live chat (Anfragen) -->
+    <script src="/widget.js" data-api-base=""></script>
+    <script>
+      function openChat(e){ if(e) e.preventDefault(); var l=document.querySelector(".kiw-launch"); if(l) l.click(); }
+      var a1=document.getElementById("askBtn"), a2=document.getElementById("askBtn2");
+      if(a1) a1.addEventListener("click", openChat);
+      if(a2) a2.addEventListener("click", openChat);
+    </script>
+  </body>
+</html>
