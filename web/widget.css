@@ -1,0 +1,27 @@
+/* K&I Kundenwerke chat widget styles */
+.kiw { position: fixed; right: 20px; bottom: 20px; z-index: 2147483000;
+  font: 14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+.kiw-launch { width: 56px; height: 56px; border-radius: 50%; border: none;
+  background: #2563eb; color: #fff; font-size: 24px; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0,0,0,.25); }
+.kiw-panel { position: fixed; right: 20px; bottom: 88px; width: 360px;
+  max-width: calc(100vw - 40px); height: 520px; max-height: calc(100vh - 120px);
+  background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; overflow: hidden;
+  display: flex; flex-direction: column; box-shadow: 0 12px 40px rgba(0,0,0,.25); }
+.kiw-head { background: #2563eb; color: #fff; padding: 12px 14px; font-weight: 600;
+  display: flex; justify-content: space-between; align-items: center; }
+.kiw-close { background: none; border: none; color: #fff; font-size: 20px; cursor: pointer; }
+.kiw-msgs { flex: 1; overflow-y: auto; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.kiw-bubble { max-width: 85%; padding: 8px 12px; border-radius: 12px; white-space: pre-wrap;
+  word-wrap: break-word; }
+.kiw-user { align-self: flex-end; background: #2563eb; color: #fff; border-bottom-right-radius: 4px; }
+.kiw-bot { align-self: flex-start; background: #f1f5f9; color: #0f172a; border-bottom-left-radius: 4px; }
+.kiw-typing::after { content: "tippt…"; color: #94a3b8; font-style: italic; }
+.kiw-cite { margin-top: 6px; font-size: 11px; color: #64748b; word-break: break-all; }
+.kiw-consent { padding: 6px 14px; font-size: 11px; color: #64748b; background: #f8fafc;
+  border-top: 1px solid #eef2f7; }
+.kiw-form { display: flex; gap: 8px; padding: 10px; border-top: 1px solid #e5e7eb; }
+.kiw-input { flex: 1; padding: 9px 12px; border: 1px solid #cbd5e1; border-radius: 10px; outline: none; }
+.kiw-input:focus { border-color: #2563eb; }
+.kiw-send { padding: 9px 14px; border: none; border-radius: 10px; background: #2563eb;
+  color: #fff; cursor: pointer; }

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>K&I Kundenwerke — KI-Kundenservice (Demo)</title>
+    <link rel="stylesheet" href="widget.css" />
+    <style>
+      body { font: 16px/1.6 system-ui, sans-serif; margin: 0; color: #0f172a;
+        background: radial-gradient(1000px 500px at 80% -10%, #dbeafe, #fff 60%); }
+      .wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px; }
+      h1 { font-size: 2rem; } code { background: #f1f5f9; padding: 2px 6px; border-radius: 6px; }
+      .badge { color: #2563eb; font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <p class="badge">K&amp;I Kundenwerke</p>
+      <h1>KI-Kundenservice – Live-Demo</h1>
+      <p>
+        Unten rechts öffnet sich der Chat-Assistent. Er beantwortet Fragen rund um
+        unsere KI-Leistungen, erfasst auf Wunsch Kontaktdaten und übergibt bei Bedarf
+        an einen Menschen.
+      </p>
+      <p>
+        Status der Plattform: <code id="status">lädt…</code>
+      </p>
+      <p>
+        Einbindung auf einer beliebigen Website mit einer Zeile:
+        <br /><code>&lt;script src="/widget.js" data-api-base=""&gt;&lt;/script&gt;</code>
+      </p>
+    </div>
+
+    <script src="widget.js" data-api-base=""></script>
+    <script>
+      fetch("/api/health")
+        .then((r) => r.json())
+        .then((h) => {
+          document.getElementById("status").textContent =
+            "Modus " + h.mode + " · Modell " + (h.model || "—");
+        })
+        .catch(() => (document.getElementById("status").textContent = "offline"));
+    </script>
+  </body>
+</html>

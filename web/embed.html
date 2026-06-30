@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>K&I Kundenwerke — Widget einbinden</title>
+    <style>
+      body { font: 16px/1.6 system-ui, sans-serif; max-width: 720px; margin: 40px auto;
+        padding: 0 20px; color: #0f172a; }
+      pre { background: #0b1020; color: #e2e8f0; padding: 16px; border-radius: 10px; overflow: auto; }
+      code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    </style>
+  </head>
+  <body>
+    <h1>Chat-Widget einbinden</h1>
+    <p>Füge diese eine Zeile vor <code>&lt;/body&gt;</code> deiner Website ein:</p>
+    <pre><code>&lt;script
+  src="https://DEIN-HOST/widget.js"
+  data-api-base="https://DEIN-HOST"&gt;&lt;/script&gt;</code></pre>
+    <p>
+      <strong>Hinweise:</strong>
+    </p>
+    <ul>
+      <li><code>data-api-base</code> ist die öffentliche URL deines Plattform-Servers
+        (dort, wo <code>/api/chat</code> läuft).</li>
+      <li>Erlaube deine Website-Domain in <code>WEB_ALLOWED_ORIGINS</code> auf dem Server.</li>
+      <li>Das Widget lädt zusätzlich <code>widget.css</code> automatisch nicht – binde es
+        bei Bedarf mit ein oder kopiere die Styles in dein CSS.</li>
+    </ul>
+  </body>
+</html>
