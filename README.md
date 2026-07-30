@@ -86,6 +86,22 @@ python generate_local.py             # generate on a GPU → web/clips/*.mp4
 Both pipelines read the same storyboard ([`storyboard.json`](./storyboard.json))
 and write the same `web/clips.json`, so the website works with either backend.
 
+## Ortsdaten China (GeoNames)
+
+Unabhängig von der Medien-Pipeline liegt in [`data/`](./data) ein Skript, das
+die **vollständige Ortsliste Chinas** aus dem GeoNames-Datensatz als CSV
+erzeugt (Städte, Gemeinden, Dörfer, Weiler). Keine Schlüssel, keine
+Abhängigkeiten — nur die Python-Standardbibliothek.
+
+```bash
+cd data
+python3 china_orte_komplett.py
+# → china_orte.csv (alle Orte) + china_orte_mit_ew.csv (nur mit Einwohnerzahl)
+```
+
+Details zu Spalten, Optionen und zur Datenlage bei Einwohnerzahlen:
+[`data/README.md`](./data/README.md).
+
 ## Configuration
 
 Create credentials at <https://cloud.higgsfield.ai> and provide them as

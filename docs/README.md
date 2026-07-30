@@ -34,6 +34,7 @@ ganz ohne Schlüssel (Demo-Modus), echter Bot mit `ANTHROPIC_API_KEY`, echte Med
 | [`../PRIVACY.md`](../PRIVACY.md) | DSGVO/Datenschutz (Rechtsgrundlage, Auftragsverarbeiter, Retention, Erasure). |
 | [`../SETUP_CLAUDE_DESKTOP.md`](../SETUP_CLAUDE_DESKTOP.md) | Higgsfield-MCP in Claude Desktop einrichten. |
 | [`../RESEARCH_OPEN_SOURCE_VIDEO.md`](../RESEARCH_OPEN_SOURCE_VIDEO.md) | Recherche: sichere Open-Source-Video-Alternativen (Wan 2.2). |
+| [`../data/README.md`](../data/README.md) | Ortsdaten China aus GeoNames (CSV-Export, Spalten, Einwohnerzahl-Datenlage). |
 | [`../src/platform/README.md`](../src/platform/README.md) | Entwickler-Doku der Plattform-Schicht. |
 
 ## Schnellstart (lokal, ohne Schlüssel)

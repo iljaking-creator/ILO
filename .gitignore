@@ -10,6 +10,11 @@ local/.venv/
 # Generated clip media (large binaries — keep them out of git)
 web/clips/*.mp4
 
+# GeoNames-Rohdaten und abgeleitete Ortslisten (siehe data/README.md)
+data/*.zip
+data/*.zip.part
+data/*.csv
+
 # Local secrets — never commit real credentials
 .env
 .env.local
