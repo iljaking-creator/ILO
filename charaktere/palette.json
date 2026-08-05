@@ -1,0 +1,16 @@
+{
+  "name": "schicht.fit",
+  "regeln": {
+    "orange": "Maximal ein oranges Element pro Bild.",
+    "natrium": "Nur Lichtstimmung Nacht, nie auf der Figur.",
+    "maxFarben": 6
+  },
+  "farben": {
+    "nacht": { "hex": "#16181C", "einsatz": "Hintergrund, tiefste Fläche" },
+    "anthrazit": { "hex": "#24282E", "einsatz": "Konturen, Schatten, Grundkörper" },
+    "werksgrau": { "hex": "#5A606B", "einsatz": "zweite Figur, Fell, Nebenflächen" },
+    "stanzpapier": { "hex": "#C9C6BE", "einsatz": "Haut-/Stoffflächen, Papiergrund" },
+    "warnorange": { "hex": "#FF5A1F", "einsatz": "Akzent — maximal ein Element pro Bild" },
+    "natrium": { "hex": "#E8B84B", "einsatz": "nur Lichtstimmung Nacht, nie auf der Figur" }
+  }
+}

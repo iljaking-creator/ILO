@@ -1,0 +1,34 @@
+{
+  "projekt": "schicht.fit Charakter-Designphase",
+  "datum": "2026-08-05",
+  "status": "Designphase abgeschlossen, Empfehlung: Charakter B (Russ), Turnaround + Expression-Sheet erzeugt",
+  "hinweis": "PNGs liegen in der Higgsfield-Galerie des Accounts. Download auf einem Rechner ohne Egress-Sperre: scripts/download-charaktere.sh ausführen.",
+  "empfehlung": {
+    "charakter": "b-russ",
+    "gewaehlte_variante": "b-russ-v1 (job 80e8921a-696b-4b0e-9848-a1dae9848ca6)",
+    "turnaround_job": "6b189a00-4b0f-4122-878f-f8b2e8831a86",
+    "turnaround_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_225256_6b189a00-4b0f-4122-878f-f8b2e8831a86.png",
+    "expression_sheet_job": "b81266a1-58ca-4f06-88af-2ef0b12bcaa0",
+    "expression_sheet_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_225256_b81266a1-58ca-4f06-88af-2ef0b12bcaa0.png"
+  },
+  "varianten": [
+    { "id": "a-schichtler-v1", "modell": "nano_banana_pro", "variation": "stämmig, breiter Rücken", "job_id": "7962a56c-d5af-498e-9619-f38c951ec8e1", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_7962a56c-d5af-498e-9619-f38c951ec8e1.png" },
+    { "id": "a-schichtler-v2", "modell": "nano_banana_pro", "variation": "drahtig, lange Gliedmaßen", "job_id": "540c40e3-7de8-4cd3-b35e-882f5a4df684", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_540c40e3-7de8-4cd3-b35e-882f5a4df684.png" },
+    { "id": "a-schichtler-v3", "modell": "nano_banana_pro", "variation": "runde Silhouette, dicke Pinselkontur", "job_id": "c9c78422-3b19-4679-8b04-6a57403eeab8", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_c9c78422-3b19-4679-8b04-6a57403eeab8.png" },
+    { "id": "a-schichtler-v4", "modell": "recraft_v4_1", "variation": "Basis, exakte Palette", "job_id": "24fe6e60-7f4e-4a52-85ad-598d948c0b3e", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_24fe6e60-7f4e-4a52-85ad-598d948c0b3e.png" },
+    { "id": "a-schichtler-v5", "modell": "recraft_v4_1", "variation": "stämmiger, Holzschnitt-Feel", "job_id": "66edd2c4-015d-4d29-8c96-a1fc2347aedf", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_66edd2c4-015d-4d29-8c96-a1fc2347aedf.png" },
+    { "id": "a-schichtler-v6", "modell": "recraft_v4_1", "variation": "lang, dünne Linien, Negativraum", "job_id": "3c839acc-68cc-44e6-89d7-e7e476b4df89", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224943_3c839acc-68cc-44e6-89d7-e7e476b4df89.png" },
+    { "id": "b-russ-v1", "modell": "nano_banana_pro", "variation": "maximal pummelig, tiefer Schwerpunkt — GEWÄHLT", "job_id": "80e8921a-696b-4b0e-9848-a1dae9848ca6", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_80e8921a-696b-4b0e-9848-a1dae9848ca6.png" },
+    { "id": "b-russ-v2", "modell": "nano_banana_pro", "variation": "struppiger, grummeliger, hängendes Lid", "job_id": "01a0f8a2-5bb6-46d4-96ec-f6a4684c920e", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_01a0f8a2-5bb6-46d4-96ec-f6a4684c920e.png" },
+    { "id": "b-russ-v3", "modell": "nano_banana_pro", "variation": "größerer Kopf, Thermobecher", "job_id": "410d01fc-9957-47d7-8950-0994f8636ac0", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_410d01fc-9957-47d7-8950-0994f8636ac0.png" },
+    { "id": "b-russ-v4", "modell": "recraft_v4_1", "variation": "Basis, exakte Palette", "job_id": "1a0220cf-821e-457b-b18e-3cd08017cb91", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_1a0220cf-821e-457b-b18e-3cd08017cb91.png" },
+    { "id": "b-russ-v5", "modell": "recraft_v4_1", "variation": "grungy Gig-Poster, schwere Tinte", "job_id": "c63f8cfe-554a-4562-bd6c-a72442e05d49", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_c63f8cfe-554a-4562-bd6c-a72442e05d49.png" },
+    { "id": "b-russ-v6", "modell": "recraft_v4_1", "variation": "reduzierte Formen, starke Silhouette", "job_id": "29e9c3e1-8b9c-42cc-8bdb-e19b1f465042", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_29e9c3e1-8b9c-42cc-8bdb-e19b1f465042.png" },
+    { "id": "c-koerper-v1", "modell": "nano_banana_pro", "variation": "C1 dünn/aufrecht, C2 extra rund", "job_id": "2515236e-0bd8-46ba-91a4-08b1eaa7a1c2", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224857_2515236e-0bd8-46ba-91a4-08b1eaa7a1c2.png" },
+    { "id": "c-koerper-v2", "modell": "nano_banana_pro", "variation": "C2 umklammert Schienbein", "job_id": "5436a156-ead8-4c1f-a0ea-22f30ce3671c", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224857_5436a156-ead8-4c1f-a0ea-22f30ce3671c.png" },
+    { "id": "c-koerper-v3", "modell": "nano_banana_pro", "variation": "Holzschnitt, Schleifspuren", "job_id": "ed642cff-08a2-4d5d-844a-1b297af26a5b", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224857_ed642cff-08a2-4d5d-844a-1b297af26a5b.png" },
+    { "id": "c-koerper-v4", "modell": "recraft_v4_1", "variation": "Basis, exakte Palette", "job_id": "2caf259c-b797-47be-afde-8d24cbd76969", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224943_2caf259c-b797-47be-afde-8d24cbd76969.png" },
+    { "id": "c-koerper-v5", "modell": "recraft_v4_1", "variation": "schwere Tinte, Gig-Poster", "job_id": "641cabdb-d1cd-4414-9add-c986179d7042", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224943_641cabdb-d1cd-4414-9add-c986179d7042.png" },
+    { "id": "c-koerper-v6", "modell": "recraft_v4_1", "variation": "minimal, Silhouetten, Negativraum", "job_id": "6f4e2122-8fd4-46bd-a93c-95a653dcb2ba", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224943_6f4e2122-8fd4-46bd-a93c-95a653dcb2ba.png" }
+  ]
+}
