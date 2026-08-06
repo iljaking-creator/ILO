@@ -20,7 +20,7 @@ echo "OK  charaktere/b-russ/modelsheet.png"
 curl -fsS -o charaktere/b-russ/expressions.png "$(jq -r '.empfehlung.expression_sheet_url' charaktere/manifest.json)"
 echo "OK  charaktere/b-russ/expressions.png"
 
-jq -r '.ausbau[] | .id + " " + .url' charaktere/manifest.json | while read -r id url; do
+jq -r '.ausbau[], .storyboards[] | .id + " " + .url' charaktere/manifest.json | while read -r id url; do
   out="charaktere/b-russ/${id}.png"
   [ -f "$out" ] || curl -fsS -o "$out" "$url"
   echo "OK  $out"
