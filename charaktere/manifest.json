@@ -1,7 +1,7 @@
 {
   "projekt": "schicht.fit Charakter-Designphase",
-  "datum": "2026-08-05",
-  "status": "Designphase abgeschlossen, Empfehlung: Charakter B (Russ), Turnaround + Expression-Sheet erzeugt",
+  "datum": "2026-08-06",
+  "status": "Designphase abgeschlossen. Russ (B) vom Nutzer bestätigt und zum Maskottchen ausgebaut: Formen-System, Schicht-Varianten, Spiegelszene (siehe b-russ/charakterbibel.md)",
   "hinweis": "PNGs liegen in der Higgsfield-Galerie des Accounts. Download auf einem Rechner ohne Egress-Sperre: scripts/download-charaktere.sh ausführen.",
   "empfehlung": {
     "charakter": "b-russ",
@@ -11,6 +11,11 @@
     "expression_sheet_job": "b81266a1-58ca-4f06-88af-2ef0b12bcaa0",
     "expression_sheet_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_225256_b81266a1-58ca-4f06-88af-2ef0b12bcaa0.png"
   },
+  "ausbau": [
+    { "id": "russ-formen-lineup", "modell": "nano_banana_pro", "inhalt": "Formen-System F1–F4: 10 Jahre Schicht, Entschluss, Kämpfer, Fitte (siehe b-russ/charakterbibel.md Abschnitt 3)", "job_id": "a8dc2d76-a1df-492e-bf37-0fc27d277090", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260806_013323_a8dc2d76-a1df-492e-bf37-0fc27d277090.png" },
+    { "id": "russ-schichten-lineup", "modell": "nano_banana_pro", "inhalt": "Schicht-Varianten als Kontexte: Frühschicht (Thermobecher), Spätschicht (Brotdose/Uhr), Nachtschicht (Motten, Natrium-Licht nur im Hintergrund)", "job_id": "61adfc52-18c2-47d1-9b75-529e211fca04", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260806_013323_61adfc52-18c2-47d1-9b75-529e211fca04.png" },
+    { "id": "russ-spiegelszene", "modell": "nano_banana_pro", "inhalt": "Keyframe Video 1 „Der Spiegel“: F1-Russ hebt die Weste vorm Badezimmerspiegel, Spind rechts", "job_id": "c5d4afa0-91c7-4995-b845-28e8df850b9f", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260806_013323_c5d4afa0-91c7-4995-b845-28e8df850b9f.png" }
+  ],
   "varianten": [
     { "id": "a-schichtler-v1", "modell": "nano_banana_pro", "variation": "stämmig, breiter Rücken", "job_id": "7962a56c-d5af-498e-9619-f38c951ec8e1", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_7962a56c-d5af-498e-9619-f38c951ec8e1.png" },
     { "id": "a-schichtler-v2", "modell": "nano_banana_pro", "variation": "drahtig, lange Gliedmaßen", "job_id": "540c40e3-7de8-4cd3-b35e-882f5a4df684", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3G6KJ35XNKvEjyUphK3yDSPCBXw/hf_20260805_224846_540c40e3-7de8-4cd3-b35e-882f5a4df684.png" },
