@@ -2,76 +2,105 @@
 
 | | |
 |---|---|
-| **Länge** | ca. 42 s |
+| **Länge** | ca. 60 s (12 Szenen à ~5 s) |
 | **Form** | F1 „10 Jahre Schicht" |
-| **Orte** | Hausflur → Wohnzimmer → Küche → Badezimmer |
-| **Requisiten** | Schlüsselbrett, Auto (durchs Fenster), Ordner „ABBEZAHLT", Spiegel |
-| **Hook (0–2 s)** | Der nackte Bauch im Spiegel, Pfote drauf — DANN erst die Rückblende |
-| **Storyboard** | Job `e77f27c6-5911-4534-8a82-ec06f68d9ed3` |
+| **Orte** | Werkstor → Straße → Hausflur → Wohnzimmer → Küche → Flur → Badezimmer |
+| **Requisiten** | Stechuhr, Schlüsselbrett, Auto, Ordner „ABBEZAHLT", gerahmtes Foto (junger Russ), Spiegel |
+| **Hook (0–2 s)** | Stechuhr-Stempel + „10 Jahre. Jeden Tag." — dann läuft die Folge auf den Spiegel zu |
+| **Storyboard** | Job `33581b77-e0fa-4ba4-a315-cfedadf1f22e` (12 Panels; Erstfassung `7e5b054e…` verworfen — Figuren-Drift, Russ geriet zu Bär/Katze) |
 
-**Dramaturgie-Trick:** Die Folge beginnt mit dem emotionalen Höhepunkt
-(Spiegel), springt dann zurück und läuft wieder auf ihn zu. So sitzt der
-Hook in Sekunde 0 und der Moment trägt trotzdem die ganze Folge.
+**Neu in dieser Fassung (was fehlte):**
+- **Das Werk selbst** — die Origin-Story zeigte Arbeit nur als Behauptung.
+  Jetzt beginnt sie am Werkstor mit der Stechuhr (Szene 1–2).
+- **Der 10-Jahre-Beweis** — das gerahmte Foto vom jungen, schlanken Russ
+  (Szene 6) und der direkte Vergleich Foto-neben-Spiegel (Szene 10).
+  Vorher wurde „ich bin nicht mehr der Alte" nur gesagt, jetzt sieht
+  man es.
+- **Durchgehende Kausalkette** — jede Szene beantwortet die vorige:
+  Arbeit → Lohn (Auto, Haus) → Preis (der Körper) → Entschluss.
 
 ---
 
 ## Szenen
 
-### Szene 1 — Badezimmer (Hook) · 0:00–0:02
-- **Bild:** Extreme Nahaufnahme: Pfote liegt auf dem dicken Bauch,
-  Spiegelkante angeschnitten. Kein Gesicht. Stille.
-- **Text-Overlay:** „10 Jahre Schicht."
-- **Sound:** Nur Neonröhren-Brummen.
+### Szene 1 — Werkstor, Morgengrauen · 0:00–0:05
+- **Bild:** Nahaufnahme Stechuhr, Russ' Pfote stempelt aus. Kartenschlitz,
+  Klack.
+- **VO (Russ):** „Zehn Jahre Schicht. Jeden Tag gestempelt."
+- **Sound:** Stechuhr-Klack, Werkssirene entfernt.
 
-### Szene 2 — Hausflur, nachts · 0:02–0:08
-- **Bild:** Harter Schnitt zurück. Russ schlurft nach der Schicht zur Tür
-  rein, hängt den Schlüssel ans Schlüsselbrett. Weste rutscht von der
-  Schulter (Signature-Geste: er zieht sie hoch).
-- **VO (Russ):** „Zehn Jahre Schicht. Früh, spät, nachts. Immer
-  durchgezogen."
-- **Sound:** Tür, Schlüsselklirren, schwere Schritte.
+### Szene 2 — Straße · 0:05–0:10
+- **Bild:** Russ läuft die leere Straße heim, Werksilhouette hinter ihm,
+  Weste rutscht, er zieht sie hoch (Signature-Geste).
+- **VO:** „Früh, spät, nachts. Immer durchgezogen."
+- **Sound:** Schritte, ein einzelnes Auto.
 
-### Szene 3 — Wohnzimmer · 0:08–0:14
-- **Bild:** Russ am Fenster, draußen in der Einfahrt das Auto. Er lächelt
-  klein und stolz. Kamera bleibt hinter ihm.
-- **VO:** „Und es hat sich gelohnt. Das Auto? Bezahlt."
-- **Sound:** Leiser Straßenlärm, gedämpft.
+### Szene 3 — Hausflur · 0:10–0:15
+- **Bild:** Schlüssel ans Schlüsselbrett. Ruhige, geübte Bewegung —
+  tausendmal gemacht.
+- **VO:** „Und es hat sich gelohnt."
+- **Sound:** Schlüsselklirren, Tür fällt zu.
 
-### Szene 4 — Küche · 0:14–0:20
-- **Bild:** Nahaufnahme: dicker Ordner auf dem Küchentisch, Etikett
-  „ABBEZAHLT". Russ' Pfote legt sich drauf, tätschelt ihn zweimal.
-- **VO:** „Das Haus? Meins. Jeder Cent davon — Schichtarbeit."
+### Szene 4 — Wohnzimmer, Fenster · 0:15–0:20
+- **Bild:** Russ am Fenster, draußen das Auto in der Einfahrt. Kleines
+  stolzes Lächeln.
+- **VO:** „Das Auto? Bezahlt."
+- **Sound:** Gedämpfter Straßenlärm.
+
+### Szene 5 — Küche · 0:20–0:25
+- **Bild:** Nahaufnahme: dicker Ordner „ABBEZAHLT" auf dem Tisch, Pfote
+  drauf, tätschelt zweimal.
+- **VO:** „Das Haus? Meins. Jeder Cent — Schichtarbeit."
 - **Sound:** Papier, dumpfes Tätscheln.
 
-### Szene 5 — Badezimmer · 0:20–0:30
-- **Bild:** Russ vor dem Spiegel. Er schaut sich an, zögert, hebt die
-  Weste. Der Bauch. Er lässt die Weste nicht fallen — er hält sie und
-  schaut. Lange. (Wir sind wieder beim Hook-Bild — jetzt mit Kontext.)
-- **VO:** „Für den Geldbeutel hab ich alles geschafft." — Pause 2 s —
-  „Für meinen Körper: nichts."
-- **Sound:** Neonröhre. Sonst nichts. Die Stille ist der Punkt.
+### Szene 6 — Flur, die Fotowand · 0:25–0:30
+- **Bild:** Gerahmtes Foto an der Wand: junger, schlanker Russ am
+  Werkstor, erster Arbeitstag. Russ bleibt davor stehen.
+- **VO:** „Das war ich. Vor zehn Jahren."
+- **Sound:** Stille setzt ein — nur noch Raumton.
 
-### Szene 6 — Badezimmer, Blick in die Kamera · 0:30–0:38
-- **Bild:** Russ dreht sich vom Spiegel zur Kamera. Augenringe, aber der
-  Blick ist wach. Er zieht die Weste hoch (Signature-Geste, jetzt als
-  Entschluss).
-- **VO:** „Ich bin nicht mehr der Alte. Zeit, das zu ändern."
+### Szene 7 — Badezimmer · 0:30–0:35
+- **Bild:** Russ vor dem Spiegel. Er schaut sich an. Zögert.
+- **VO:** — (keine Stimme, die Stille arbeitet)
+- **Sound:** Neonröhren-Brummen.
+
+### Szene 8 — Der Bauch · 0:35–0:40
+- **Bild:** Er hebt die Weste. Der Bauch. Er hält sie oben und schaut.
+- **VO:** „Für den Geldbeutel hab ich alles geschafft."
+- **Sound:** Neonröhre.
+
+### Szene 9 — Das Gesicht · 0:40–0:45
+- **Bild:** Ganz nah: müde Augen im Spiegel, Blick nach unten.
+- **VO:** „Für meinen Körper — nichts."
+- **Sound:** Stille.
+
+### Szene 10 — Der Vergleich · 0:45–0:50
+- **Bild:** Russ hält das Foto vom jungen Russ neben sein Spiegelbild.
+  Zwei Russe nebeneinander: damals / heute. DER Frame der Folge
+  (Thumbnail-Kandidat).
+- **VO:** „Ich bin nicht mehr der Alte."
+- **Sound:** Ein tiefer Ton setzt ein.
+
+### Szene 11 — Der Entschluss · 0:50–0:55
+- **Bild:** Russ dreht sich zur Kamera, zieht die Weste hoch — dieselbe
+  Geste wie in Szene 2, jetzt als Ansage.
+- **VO:** „Zeit, das zu ändern."
 - **Sound:** Erster Bass-Schlag der Serienmusik.
 
-### Abbinder · 0:38–0:42
-- **Bild:** Titelkarte: „FIT MIT SCHICHT" + darunter klein
-  „Schicht für Schicht."
+### Szene 12 — Titelkarte · 0:55–1:00
+- **Bild:** „FIT MIT SCHICHT" + darunter „Schicht für Schicht."
 - **CTA (Text):** „Folge 2: Wann soll ich denn bitte trainieren?!"
 
 ---
 
 ## Anschluss
-Folge 2 greift den letzten Satz direkt auf: Der Entschluss ist da — und
-scheitert sofort komisch an der Realität des Schichtplans. Russ bleibt
-in F1; die Form wechselt erst mit Phase 2 der Serie.
+Folge 2 nimmt den Entschluss und lässt ihn sofort komisch an der
+Realität des Schichtplans scheitern — bevor das Timing ihn rettet.
 
-## Abnahme-Check (aus stil-regeln.md)
-- [ ] Genau ein oranges Element pro Frame (Weste)
-- [ ] Hook in Sekunde 0–2, kein Intro davor
-- [ ] Catchphrase am Ende, identische Titelkarte
-- [ ] Pausen nicht totquatschen — Szene 5 lebt von der Stille
+## Abnahme-Check
+- [ ] Genau ein oranges Element pro Frame (Weste; auf dem alten Foto
+  trägt der junge Russ dieselbe Weste — Kontinuität!)
+- [ ] Szene 10 funktioniert als Standbild/Thumbnail
+- [ ] Die Weste-hochziehen-Geste kommt zweimal: müde (Sz. 2) und
+  entschlossen (Sz. 11)
+- [ ] Szene 7–9 nicht totquatschen — die Stille ist der Punkt

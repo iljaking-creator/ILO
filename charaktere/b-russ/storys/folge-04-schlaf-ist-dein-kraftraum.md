@@ -2,79 +2,119 @@
 
 | | |
 |---|---|
-| **Länge** | ca. 40 s |
+| **Länge** | ca. 60 s (12 Szenen à ~5 s) |
 | **Form** | F1 „10 Jahre Schicht" |
-| **Orte** | Schlafzimmer (Umbau → Nacht → Morgen), Mini-Spind neben dem Bett |
-| **Requisiten** | Verdunkelungsvorhänge, Trittleiter, Schraubenzieher, Handy, Vorhängeschloss, Schlafmaske, Schild „KRAFTRAUM" |
-| **Hook (0–2 s)** | Russ montiert mit Werkzeug Vorhänge — „Ich baue mir ein Gym." |
-| **Storyboard** | Job `ae8872f5-f04e-4f15-be24-98fd8222470c` |
+| **Orte** | Straße/Haustür (Tag) → Schlafzimmer (Problem → Umbau → Nacht → Morgen) |
+| **Requisiten** | Verdunkelungsvorhänge, Trittleiter, Schraubenzieher, Fenster, Handy, Mini-Spind, Vorhängeschloss, Schlafmaske, Schild „KRAFTRAUM", Batterie-Balken (Stanzpapier-weiß!) |
+| **Hook (0–2 s)** | Russ kommt von der Nachtschicht — und die Sonne knallt ihm ins Gesicht |
+| **Storyboard** | Job `ba2db034-dff0-4ea0-8778-4e6483a673d0` (12 Panels) |
 
-**Dramaturgie:** Der Twist der Folge steckt im Titel: Russ „baut ein Gym"
-— und es ist sein Schlafzimmer. Ein Schichtarbeiter nimmt Schlaf ernst
-wie einen Arbeitsauftrag. Werker-Logik statt Wellness-Sprech.
+**Neu in dieser Fassung (was fehlte):**
+- **Das Problem zuerst.** Vorher startete die Folge direkt mit der
+  Lösung (Vorhänge montieren). Jetzt: Sonne + Lärm verhindern den
+  Tagschlaf (Szene 1–2) — DANN der Umbau. Man versteht, wogegen er baut.
+- **Lärm als zweiter Gegner** (Szene 5): Fenster zu, Zacken hören auf.
+  Schichtschlaf scheitert nicht nur an Licht.
+- **Der Beweis am Ende** (Szene 10): Die Werksirene draußen — er
+  schläft durch. Vorher wurde „erholt" nur behauptet.
+- **Farbregel-Fix:** Der Batterie-Balken ist Stanzpapier-weiß,
+  NICHT orange (in der 6-Panel-Fassung war er orange — verletzt die
+  Ein-Orange-Regel).
 
 ---
 
 ## Szenen
 
-### Szene 1 — Schlafzimmer, Umbau (Hook) · 0:00–0:06
-- **Bild:** Russ auf der Trittleiter, Schraubenzieher in der Pfote,
-  montiert schwere Verdunkelungsvorhänge. Heimwerker-Energie.
-- **VO (Russ):** „Ich bau mir heut ein Gym." — Beat — „Genau hier."
-- **Sound:** Schrauben, Bohrer kurz.
+### Szene 1 — Haustür, grelles Tageslicht (Hook) · 0:00–0:05
+- **Bild:** Russ kommt von der Nachtschicht heim, die Sonne knallt
+  durchs Fenster, er kneift die Augen zu.
+- **VO (Russ):** „Nachtschicht-Problem Nummer eins: Wenn ich schlafen
+  will, hat der Tag geöffnet."
+- **Sound:** Grelle Vögel, Verkehr.
 
-### Szene 2 — Der Handy-Spind · 0:06–0:14
-- **Bild:** Neben dem Bett: ein kleiner Metallspind wie in der Umkleide.
-  Russ legt das Handy rein, Vorhängeschloss, klick. Er tätschelt den
-  Spind wie einen Kollegen.
-- **VO:** „Das Handy hat jetzt auch Schichtende. Wer im Bett scrollt,
-  macht unbezahlte Überstunden."
+### Szene 2 — Schlafzimmer, der Kampf · 0:05–0:12
+- **Bild:** Russ im Bett, Kissen über den Kopf gepresst, vom Fenster
+  kommen Lärm-Zacken (Kinder, Rasenmäher, Verkehr).
+- **VO:** „Licht durch die Gardine. Rasenmäher um zehn. Das ist kein
+  Schlafzimmer. Das ist eine Baustelle."
+- **Sound:** Collage: Rasenmäher, Kinder, Hupe.
+
+### Szene 3 — Der Entschluss · 0:12–0:17
+- **Bild:** Nahaufnahme: entschlossenes Gesicht, Ärmel-hochkrempeln-
+  Energie (bei einer Weste: er zieht sie stramm).
+- **VO:** „Gut. Dann bau ich mir ein Gym." — Beat — „Genau hier."
+- **Sound:** Musik setzt an.
+
+### Szene 4 — Verdunkelung · 0:17–0:23
+- **Bild:** Trittleiter, Schraubenzieher, Russ montiert schwere
+  Verdunkelungsvorhänge. Heimwerker-Montage.
+- **VO:** „Schritt eins: Nacht selber machen. Verdunkelung, richtig
+  dicht."
+- **Sound:** Bohrer kurz, Schrauben.
+
+### Szene 5 — Stille · 0:23–0:28
+- **Bild:** Russ drückt das Fenster zu — die Lärm-Zacken hören
+  schlagartig auf. Der Raum wird ruhig, dunkler.
+- **VO:** „Schritt zwei: Tür zu für den Tag."
+- **Sound:** Lärm bricht ab → wohltuende Stille.
+
+### Szene 6 — Der Handy-Spind · 0:28–0:34
+- **Bild:** Kleiner Metallspind neben dem Bett. Handy rein,
+  Vorhängeschloss, klick. Er tätschelt den Spind wie einen Kollegen.
+- **VO:** „Schritt drei: Das Handy hat jetzt auch Schichtende.
+  Wer im Bett scrollt, macht unbezahlte Überstunden."
 - **Text-Overlay:** „HANDY → SPIND"
 - **Sound:** Metalltür, Schloss-Klick.
 
-### Szene 3 — Bereit machen · 0:14–0:20
-- **Bild:** Russ sitzt auf der Bettkante, zieht die Schlafmaske auf die
-  Stirn. Die Weste hängt ordentlich am Bettpfosten — Feierabend-Ritual.
+### Szene 7 — Bereit · 0:34–0:39
+- **Bild:** Bettkante, Schlafmaske auf die Stirn, Weste ordentlich am
+  Bettpfosten — Feierabend-Ritual.
 - **VO:** „Dunkel. Kühl. Still. Das sind meine Hanteln."
 - **Sound:** Stoff, ein tiefes Ausatmen.
 
-### Szene 4 — Der Kraftraum · 0:20–0:28
-- **Bild:** Russ schläft tief, Schwanz um sich gerollt. Überm Bett ein
-  raues Werkstatt-Schild: „KRAFTRAUM". Kamera langsam ranfahren.
+### Szene 8 — Der Kraftraum · 0:39–0:45
+- **Bild:** Russ schläft tief, Schwanz um sich gerollt. Überm Bett das
+  raue Werkstatt-Schild: „KRAFTRAUM". Langsame Ranfahrt.
 - **VO (leiser):** „Muskeln wachsen nicht beim Training. Sie wachsen
   genau jetzt."
-- **Sound:** Ruhiges Atmen, entfernt eine Werkssirene — er verschläft
-  sie, gehört jetzt nicht mehr ihm.
+- **Sound:** Ruhiges Atmen.
 
-### Szene 5 — Der Ladebalken · 0:28–0:34
-- **Bild:** Über dem schlafenden Russ ein flacher Batterie-Balken wie mit
-  Kreide gezeichnet: drei von vier Segmenten gefüllt, das vierte füllt
-  sich.
+### Szene 9 — Der Ladebalken · 0:45–0:50
+- **Bild:** Über dem schlafenden Russ ein flacher Batterie-Balken wie
+  mit Kreide gezeichnet (Stanzpapier-weiß, NICHT orange): drei von
+  vier Segmenten voll, das vierte füllt sich.
 - **VO:** „Wer mit Schicht fit werden will, trainiert im Schlaf."
 - **Text-Overlay:** „REGENERATION = TRAINING"
-- **Sound:** Ein tiefer, warmer Ton pro Segment.
+- **Sound:** Ein warmer Ton pro Segment.
 
-### Szene 6 — Morgen · 0:34–0:38
-- **Bild:** Graues Morgenlicht. Russ streckt sich mit Riesengähnen,
-  sichtbar erholt, ein Auge noch halb zu.
+### Szene 10 — Der Beweis · 0:50–0:54
+- **Bild:** Draußen, klein: die Werksirene heult. Drinnen: Russ
+  schläft einfach durch. Die Sirene gehört ihm gerade nicht.
+- **VO:** — (nur die gedämpfte Sirene, dann Ruhe)
+- **Sound:** Sirene weit weg, gedämpft.
+
+### Szene 11 — Voller Akku · 0:54–0:58
+- **Bild:** Aufwachen: Riesengähnen, Strecken, ein Auge noch halb zu —
+  aber sichtbar erholt.
 - **VO:** „Neue Schicht. Voller Akku."
 - **Sound:** Gähnen, Gelenk-Knacken (komisch, nicht eklig).
 
-### Abbinder · 0:38–0:40
-- **Bild:** Titelkarte „FIT MIT SCHICHT" + „Schicht für Schicht."
-- **CTA (Text):** „Staffel geht weiter: Der erste Einkauf"
+### Szene 12 — Karte · 0:58–1:00
+- **Bild:** „REGENERATION." → Titelkarte „Schicht für Schicht."
+- **CTA (Text):** „Weiter geht's: Der erste Einkauf"
 
 ---
 
 ## Anschluss
-Damit ist das Fundament gelegt (Entschluss → Timing → Essen → Schlaf).
-Ab Folge 5 wird es konkret-alltäglich: Einkauf, Meal-Prep, das erste
-echte Workout. Später kann hier Charakter C („Mein Körper" mit dem
-Zifferblatt) als Gastfigur andocken — die innere Uhr, die in dieser
-Folge schon unsichtbar die Hauptrolle spielt.
+Fundament komplett (Entschluss → Timing → Essen → Schlaf). Ab Folge 5
+wird es alltäglich-konkret: Einkauf, Meal-Prep, das erste echte Workout.
+Hier kann später Charakter C („Mein Körper" mit dem Zifferblatt) als
+Gastfigur andocken — die innere Uhr, die in dieser Folge unsichtbar die
+Hauptrolle spielt.
 
 ## Abnahme-Check
-- [ ] Genau ein oranges Element pro Frame (Weste am Bettpfosten zählt!)
-- [ ] Kein Wellness-Vokabular — Werker-Logik („Schichtende fürs Handy")
-- [ ] Der Batterie-Balken ist flach/print, kein UI-Look
-- [ ] Schlaf wird nie als Faulheit gerahmt, sondern als Arbeit am Körper
+- [ ] Batterie-Balken Stanzpapier-weiß — NICHT orange (Ein-Orange-Regel)
+- [ ] Genau ein oranges Element pro Frame (Weste, auch am Bettpfosten)
+- [ ] Problem (Sz. 1–2) vor Lösung (Sz. 4–7) — Reihenfolge nicht tauschen
+- [ ] Kein Wellness-Vokabular — Werker-Logik durchziehen
+- [ ] Szene 10 ohne VO lassen — der Beweis wirkt still am stärksten

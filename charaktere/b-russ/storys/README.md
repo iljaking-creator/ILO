@@ -1,11 +1,11 @@
 # Storys — „Fit mit Schicht", Staffel 1 (Phase „Erkennen", Form F1)
 
-Ein Drehbuch pro Folge, jeweils mit 6-Panel-Storyboard (Job-IDs im
+Ein Drehbuch pro Folge, jeweils mit 12-Panel-Storyboard (Job-IDs im
 `../../manifest.json` unter `storyboards`).
 
 ## Format-Regeln für jede Folge
 
-- **Format:** 9:16 Hochkant, 24 fps, Ziel-Länge 35–45 s
+- **Format:** 9:16 Hochkant, 24 fps, Ziel-Länge ca. 60 s (12 Szenen à ~5 s)
 - **Hook:** Sekunde 0–2 muss das stärkste Bild der Folge zeigen — nie mit
   Logo oder Begrüßung starten
 - **Form:** Staffel 1 durchgehend Körperform **F1** („10 Jahre Schicht")
