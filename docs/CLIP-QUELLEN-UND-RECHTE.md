@@ -155,16 +155,38 @@ gemeinfreies oder CC-lizenziertes Anime-Material. Jede Seite, die
 
 Drei gangbare Wege:
 
-1. **Offizielle Trailer und PVs** (🟡) — YouTube-Kanäle von Crunchyroll,
-   Aniplex, Toho Animation, Muse Asia. Sind zur Verbreitung gedacht.
-   Claim möglich, Strike unwahrscheinlich. Nachteil: alle nutzen sie,
-   und die Auflösung/Länge ist begrenzt.
+1. **Offizielle Trailer und PVs** (🟡) — siehe Kanalliste unten. Sind zur
+   Verbreitung gedacht, Claim möglich, Strike unwahrscheinlich. Und:
+   Trailer sind **das qualitativ beste Material, das überhaupt
+   existiert** — die Studios legen dort ihre Schauwerte rein, oft in 4K.
 2. **Public-Domain-Animation** (🟢) — echter Look, aber Retro, nicht
    modernes Anime. Siehe 4.4.
 3. **Selbst generieren** (🟢) — **das ist die eigentliche Antwort für
    diesen Account.** Anime-Stil-Clips per KI erzeugen: gehören zu 100 %
    dir, kein Content ID, keine Doppelungen mit anderen Accounts, exakt
    die Szene, die du brauchst. Mehr dazu in Abschnitt 6.
+
+#### Offizielle Kanäle (🟡 — echtes Material, höchste Qualität)
+
+| Kanal | Was es dort gibt |
+|---|---|
+| [Aniplex USA](https://www.youtube.com/c/AniplexUSA) | Trailer, PVs, Clips — **Rechteinhaber von Demon Slayer** |
+| Aniplex Channel (JP) | japanische Trailer, oft früher und länger |
+| [Crunchyroll](https://www.youtube.com/@Crunchyroll) / Crunchyroll Collection | offizielle Szenen-Clips, Fight-Ausschnitte, OP/ED |
+| ufotable | Studio hinter Demon Slayer — Making-of, PVs |
+| Toho Animation, Kadokawa Anime, Bandai Namco Arts, Muse Asia | offizielle Uploads, Muse Asia teils ganze Folgen (geoblockt SEA) |
+| [Liste offizieller Gratis-Kanäle](https://github.com/SuperAB123/Free-Official-Youtube-Content) | gepflegte Sammlung offizieller Kanäle mit Gratis-Inhalten |
+
+**Demon Slayer speziell:** Aniplex hat die Serie 2025 offiziell gratis auf
+YouTube gestreamt (ab 22.05. täglich eine Folge, ab 16.08. die komplette
+Serie plus Filme über Crunchyroll, jeweils 7 Tage abrufbar) — als Werbung
+für den Infinity-Castle-Film.
+
+> **Achtung, wichtiger Denkfehler:** „Offiziell gratis auf YouTube
+> abrufbar" heißt **nicht** „du darfst es weiterverwenden". Das Copyright
+> bleibt bei Aniplex. Der Unterschied liegt allein im
+> Durchsetzungsverhalten: Bei Trailer-Material *will* das Studio
+> Verbreitung, bei ganzen Folgen kommt der Takedown.
 
 ### 4.4 Public Domain / Archive (🟢, kostenlos, unbegrenzt kommerziell)
 
